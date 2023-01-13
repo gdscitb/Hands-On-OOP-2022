@@ -1,7 +1,7 @@
 # Hands On OOP
 
 ## Deskripsi Tugas
-Buatlah suatu program berbasis command-line. Program ini perlu mengimplementasikan konsep-konsep OOP, seminimalnya
+Buatlah suatu program yang *perlu* mengimplementasikan konsep-konsep OOP, seminimalnya
 - Inheritance
 - Interface dan/atau abstract class
 - Polimorfisme
@@ -50,6 +50,7 @@ Selain bahasa di bawah ini, kalian dapat me-request bahasa lain, dengan persetuj
 - Kotlin
 - Typescript
 - Go (Golang)
+- C#
 
 ### Bahasa yang tidak dapat digunakan
 Karena keterbatasan di bahasa-bahasa berikut, bahasa di bawah ini tidak digunakan di tugas ini
