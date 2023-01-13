@@ -54,6 +54,7 @@ Selain bahasa di bawah ini, kalian dapat me-request bahasa lain, dengan persetuj
 Karena keterbatasan di bahasa-bahasa berikut, bahasa di bawah ini tidak digunakan di tugas ini
 - Python
 - PHP
+- C
 
 ## Deliverable
 - Kumpulkan link github fork repository dan link pull request kalian ke gform yang dibagikan
