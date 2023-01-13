@@ -49,6 +49,7 @@ Selain bahasa di bawah ini, kalian dapat me-request bahasa lain, dengan persetuj
 - Java
 - Kotlin
 - Typescript
+- Go (Golang)
 
 ### Bahasa yang tidak dapat digunakan
 Karena keterbatasan di bahasa-bahasa berikut, bahasa di bawah ini tidak digunakan di tugas ini
