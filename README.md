@@ -5,7 +5,8 @@ Buatlah suatu program berbasis command-line. Program ini perlu mengimplementasik
 - Inheritance
 - Interface dan/atau abstract class
 - Polimorfisme
-- Menggunakan (minimal 1) design pattern
+- Mengimplementasikan (minimal 1) design pattern
+- Mengimplementasikan (minimal 1) prinsip SOLID
 
 Tugas ini sangat membebaskan kalian untuk berkreasi. Konsep-konsep lain yang kalian gunakan dan keunikan program akan sangat dihargai dan dihitung sebagai bonus nilai (jangan lupa tulis di penjelasan program). Silakan berkreasi! :D
 
