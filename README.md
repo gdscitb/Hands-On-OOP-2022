@@ -26,10 +26,6 @@ Selain membuat program, kalian perlu menuliskan penjelasan program kalian, denga
 - Konsep-konsep lain yang kalian gunakan dan keunikan program (jika ada)
 
 ## Pengumpulan
-- Pengumpulan tugas ini mirip dengan tugas sebelumnya. 
-- Fork ke repository github kalian masing - masing
-- Buka repository pada repo yang telah di fork sebelumnya
-- Clone repository tersebut pada vscode / IDE kalian
 - Buat program sesuai deskripsi di atas di dalam folder dengan format `Nama_Univ`
 - Tulis penjelasan program kalian pada file `README.md` di dalam folder tersebut
 - Add folder tersebut ke dalam staging
