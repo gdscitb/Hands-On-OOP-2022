@@ -61,7 +61,7 @@ class BusinessClass: public Pesawat {
 };
 
 // Mem-print info tiket business class
-class PrintBusinessClass: public PrintPesawat {
+class PrintBusinessClass: public BusinessClass {
     public:
         void display_info();
 };
@@ -75,7 +75,7 @@ class FirstClass: public BusinessClass {
 
         FirstClass(string airline_name, string seat_number, int adults, int kids, int super_extra_facility);
         FirstClass();
-        
+
         void set_super_extra_facility(int super_extra_facility);
         int get_super_extra_facility();
         int calculate_super_extra_facility();
@@ -83,7 +83,7 @@ class FirstClass: public BusinessClass {
 };
 
 // Mem-print info tiket first class
-class PrintFirstClass: public PrintPesawat {
+class PrintFirstClass: public FirstClass {
     public:
         void display_info();
 };
