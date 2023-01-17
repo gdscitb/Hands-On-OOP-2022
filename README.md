@@ -1,4 +1,4 @@
-# Hands On OOP
+# Hands On OOP: Pembuatan Tiket Pesawat
 
 ## Deskripsi Tugas
 Buatlah suatu program yang *perlu* mengimplementasikan konsep-konsep OOP, seminimalnya
