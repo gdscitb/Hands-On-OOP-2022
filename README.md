@@ -1,14 +1,7 @@
 # Hands On OOP: Pembuatan Tiket Pesawat
 
-## Deskripsi Tugas
-Buatlah suatu program yang *perlu* mengimplementasikan konsep-konsep OOP, seminimalnya
-- Inheritance
-- Interface dan/atau abstract class
-- Polimorfisme
-- Mengimplementasikan (minimal 1) design pattern
-- Mengimplementasikan (minimal 1) prinsip SOLID
-
-Tugas ini sangat membebaskan kalian untuk berkreasi. Konsep-konsep lain yang kalian gunakan dan keunikan program akan sangat dihargai dan dihitung sebagai bonus nilai (jangan lupa tulis di penjelasan program). Silakan berkreasi! :D
+## Deskripsi Program
+Program ini membuat tiket pesawat dengan beberapa kategori: Economy Class, Business Class, dan First Class.
 
 ### Beberapa Bonus yang Direkomendasikan
 - Stream API dan/atau functional programming
