@@ -42,7 +42,7 @@ string Pesawat::get_seat() const {
     return this->seat_number;
 }
 
-void Pesawat::set_adults(string adults) {
+void Pesawat::set_adults(int adults) {
     this->adults = adults;
 }
 
@@ -50,7 +50,7 @@ int Pesawat::get_adults() const {
     return this->adults;
 }
 
-void Pesawat::set_kids(string kids) {
+void Pesawat::set_kids(int kids) {
     this->kids = kids;
 }
 
@@ -68,15 +68,18 @@ int Pesawat::ticket_cost() const {
     } else if (this->cabin_option == "First Class") {
         sum = this->get_adults() * 2500 + this->get_kids() * 2400;
     }
+    return sum;
 }
 
-void PrintPesawat::display_info() {
+void Pesawat::print_ticket() {
+    cout << "Here's your ticket!" << endl;  
     cout << "Nama pesawat: " << this->airline_name << endl;
     cout << "Pilihan kabin: " << this->cabin_option << endl;
     cout << "Nomor kursi: " << this->seat_number << endl;
     cout << "Jumlah dewasa: " << this->adults << endl;
     cout << "Jumlah anak-anak: " << this->kids << endl;
     cout << "Total: " << this->ticket_cost() << endl;
+    cout << "Have a nice flight!" << endl;
 }
 
 BusinessClass::BusinessClass(string airline_name, string seat_number, int adults, int kids, int extra_facility) : Pesawat(airline_name, "Business Class", seat_number, adults, kids) {
@@ -99,16 +102,18 @@ int BusinessClass::calculate_extra_facility() {
     return ticket_cost() + this->extra_facility * 100;
 }
 
-void PrintBusinessClass::display_info() {
+void BusinessClass::print_ticket() {
+    cout << "Here's your ticket!" << endl;
     cout << "Nama pesawat: " << this->airline_name << endl;
     cout << "Pilihan kabin: " << this->cabin_option << endl;
     cout << "Nomor kursi: " << this->seat_number << endl;
     cout << "Jumlah dewasa: " << this->adults << endl;
     cout << "Jumlah anak-anak: " << this->kids << endl;
     cout << "Total: " << this->calculate_extra_facility() << endl;
+    cout << "Have a nice flight!" << endl;
 }
 
-FirstClass::FirstClass(string airline_name, string seat_number, int adults, int kids, int super_extra_facility) : Pesawat(get_name(), "First Class", get_seat(), get_adults(), get_kids()) {
+FirstClass::FirstClass(string airline_name, string seat_number, int adults, int kids, int super_extra_facility) : Pesawat(airline_name, "First Class", seat_number, adults, kids) {
     this->super_extra_facility = super_extra_facility;
 }
 
@@ -128,11 +133,14 @@ int FirstClass::calculate_super_extra_facility() {
     return ticket_cost() + this->super_extra_facility * 100;
 }
 
-void PrintFirstClass::display_info() {
+void FirstClass::print_ticket() {
+    cout << "Here's your ticket!" << endl;
     cout << "Nama pesawat: " << this->airline_name << endl;
     cout << "Pilihan kabin: " << this->cabin_option << endl;
     cout << "Nomor kursi: " << this->seat_number << endl;
     cout << "Jumlah dewasa: " << this->adults << endl;
     cout << "Jumlah anak-anak: " << this->kids << endl;
     cout << "Total: " << this->calculate_super_extra_facility() << endl;
+    cout << "Have a nice flight!" << endl;
 }
+

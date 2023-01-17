@@ -35,14 +35,12 @@ class Pesawat {
         int get_kids() const;
 
         int ticket_cost() const;
+
+        // Runtime polymorphism dengan keyword virtual
+        virtual void print_ticket();
 };
 
-// Mem-print info tiket pesawat
-class PrintPesawat: public Pesawat {
-    public:
-        // Runtime polymorphism dengan keyword virtual
-        virtual void display_info();
-};
+
 
 // Inheritance 1
 // Menghitung tiket pesawat business class
@@ -57,18 +55,15 @@ class BusinessClass: public Pesawat {
         void set_extra_facility(int extra_facility);
         int get_extra_facility();
         int calculate_extra_facility();
+        void print_ticket();
 
 };
 
-// Mem-print info tiket business class
-class PrintBusinessClass: public BusinessClass {
-    public:
-        void display_info();
-};
+
 
 // Inheritance 2
 // Menghitung tiket pesawat first class
-class FirstClass: public BusinessClass {
+class FirstClass: public Pesawat {
     private:
         int super_extra_facility;
     public:
@@ -79,13 +74,9 @@ class FirstClass: public BusinessClass {
         void set_super_extra_facility(int super_extra_facility);
         int get_super_extra_facility();
         int calculate_super_extra_facility();
+        void print_ticket();
 
 };
 
-// Mem-print info tiket first class
-class PrintFirstClass: public FirstClass {
-    public:
-        void display_info();
-};
 
 #endif
