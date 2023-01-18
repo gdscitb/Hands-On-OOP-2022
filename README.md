@@ -1,12 +1,16 @@
 # Hands On OOP: Pembuatan Tiket Pesawat
 
 ## Deskripsi Program
-Program ini membuat tiket pesawat dengan beberapa kategori: Economy Class, Business Class, dan First Class. Pesawat menjadi abstract class (kelas induk) yang ditujukan untuk pengguna yang ingin memesan tiket untuk kategori Economy Class. Kategori Business Class dan First Class merupakan derived class dari abstract class Pesawat.
+Program ini membuat tiket pesawat dengan beberapa kategori: Economy Class, Business Class, dan First Class. ```Pesawat``` menjadi abstract class (kelas induk) yang ditujukan untuk pengguna yang ingin memesan tiket untuk kategori Economy Class. Kategori ```BusinessClass``` dan ```FirstClass``` merupakan derived class dari abstract class Pesawat.
 
 Berikut daftar harga tiket dalam satuan Euro:
 - Economy Class: Jumlah orang dewasa * 350 + jumlah orang anak * 300
 - Business Class: Jumlah orang dewasa * 1400 + jumlah orang anak * 1300 + jumlah fasilitas * 100
 - First Class: Jumlah orang dewasa * 2500 + jumlah orang anak * 2400 + jumlah fasilitas * 500
+
+## Design Pattern
+
+Untuk program ini, saya memilih design pattern berupa Abstract Factory. Dengan men-declare ```Pesawat``` sebagai Abstract Product, class ```BusinessClass``` dan ```FirstClass``` sebagai Concrete Product dapat mengimplementasikan abstract class ```Pesawat```. Lalu, ada konstruktor Abstract Factory berupa ```Pesawat()``` yang berfungsi menciptakan objek ```Pesawat``` baru. Lalu, diciptakan konstruktor-konstruktor lain (Concrete Factory) berdasarkan Abstract Factory yang telah dibuat, seperti ```BusinessClass()``` dan ```FirstClass()```. Untuk kenyamanan, konstruktor dan metode-metode Product disatukan dalam masing-masing class. Adapun Abstract Product termasuk metode ```ticket_cost()``` dan ```print_ticket()```, Concrete Product termasuk ```print_ticket()``` pada masing-masing kelas dan penghitungan fasilitas ekstra tergantung kelasnya. Saya memilih design pattern Abstract Factory karena sebenarnya pembuatan dan penghitungan kategori Business Class dan First Class hanya perlu diwariskan dari abstract class utamanya, sehingga produksi dari abstract class lebih efisien daripada mengetik ulang lagi kode dari abstract class.
 
 ### Beberapa Bonus yang Direkomendasikan
 - Stream API dan/atau functional programming
