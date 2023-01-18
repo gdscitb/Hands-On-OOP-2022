@@ -1,14 +1,12 @@
-# Hands On OOP
+# Hands On OOP: Pembuatan Tiket Pesawat
 
-## Deskripsi Tugas
-Buatlah suatu program yang *perlu* mengimplementasikan konsep-konsep OOP, seminimalnya
-- Inheritance
-- Interface dan/atau abstract class
-- Polimorfisme
-- Mengimplementasikan (minimal 1) design pattern
-- Mengimplementasikan (minimal 1) prinsip SOLID
+## Deskripsi Program
+Program ini membuat tiket pesawat dengan beberapa kategori: Economy Class, Business Class, dan First Class. Pesawat menjadi abstract class (kelas induk) yang ditujukan untuk pengguna yang ingin memesan tiket untuk kategori Economy Class. Kategori Business Class dan First Class merupakan derived class dari abstract class Pesawat.
 
-Tugas ini sangat membebaskan kalian untuk berkreasi. Konsep-konsep lain yang kalian gunakan dan keunikan program akan sangat dihargai dan dihitung sebagai bonus nilai (jangan lupa tulis di penjelasan program). Silakan berkreasi! :D
+Berikut daftar harga tiket dalam satuan Euro:
+- Economy Class: Jumlah orang dewasa * 350 + jumlah orang anak * 300
+- Business Class: Jumlah orang dewasa * 1400 + jumlah orang anak * 1300 + jumlah fasilitas * 100
+- First Class: Jumlah orang dewasa * 2500 + jumlah orang anak * 2400 + jumlah fasilitas * 500
 
 ### Beberapa Bonus yang Direkomendasikan
 - Stream API dan/atau functional programming
