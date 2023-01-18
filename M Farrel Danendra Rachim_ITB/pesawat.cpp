@@ -130,7 +130,7 @@ int FirstClass::get_super_extra_facility() {
 }
 
 int FirstClass::calculate_super_extra_facility() {
-    return ticket_cost() + this->super_extra_facility * 100;
+    return ticket_cost() + this->super_extra_facility * 500;
 }
 
 void FirstClass::print_ticket() {
