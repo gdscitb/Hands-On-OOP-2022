@@ -9,7 +9,7 @@ Website ini bertujuan untuk mengecek suhu dari berbagai kota dengan menggunakan 
 - npm install
 - deno task dev
 
-Selain itu dapat dilihat melalui
+Selain itu dapat dilihat melalui <https://my-weather.bertrandorlando.vercel.app/>
 
 #### Design Pattern yang dipilih
 
