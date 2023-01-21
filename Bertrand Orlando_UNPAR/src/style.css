@@ -11,6 +11,8 @@
 }
 body {
   background: url(/Home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
