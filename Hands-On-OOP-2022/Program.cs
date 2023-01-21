@@ -1,244 +1,243 @@
 ﻿using Microsoft.VisualBasic.FileIO;
 using System;
-using static Program;
 
-public class Program
+public class Entity
 {
-    public class Entity
+    protected int level { get; set; }
+    protected int health { get; set; }
+    protected int mana { get; set; }
+    protected int stamina { get; set; }
+    protected int meleeDMG { get; set; }
+    protected int rangedDMG { get; set; }
+    protected string className { get; set; }
+
+    public int GetLevel()
     {
-        protected int level { get; set; }
-        protected int health { get; set; }
-        protected int mana { get; set; }
-        protected int stamina { get; set; }
-        protected int meleeDMG { get; set; }
-        protected int rangedDMG { get; set; }
-        protected string className { get; set; }
-
-        public int GetLevel()
-        {
-            return level;
-        }
-
-        public int GetHealth()
-        {
-            return health;
-        }
-
-        public int GetMana()
-        {
-            return mana;
-        }
-
-        public int GetStamina()
-        {
-            return stamina;
-        }
-
-        public int GetMeleeDMG()
-        {
-            return meleeDMG;
-        }
-
-        public int GetRangedDMG()
-        {
-            return rangedDMG;
-        }
-
-        public string GetClassName()
-        {
-            return className;
-        }
-
-        public void ChangeHealth(int delta)
-        {
-            health += delta;
-        }
-
-        public void ChangeMana(int delta)
-        {
-            mana += delta;
-        }
-
-        public void ChangeStamina(int delta)
-        {
-            stamina += delta;
-        }
-
-        public void ChangeMeleeDMG(int delta)
-        {
-            meleeDMG += delta;
-        }
-
-        public void ChangeRangedDMG(int delta)
-        {
-            rangedDMG += delta;
-        }
+        return level;
     }
 
-    public class Player : Entity
+    public int GetHealth()
     {
-        protected int experience { get; set; }
-
-        public int GetExperience()
-        {
-            return experience;
-        }
-
-        public void ChangeExperience(int delta)
-        {
-            experience += delta;
-        }
-
-        public void PlayerGetDMG(int delta)
-        {
-            ChangeHealth(-delta);
-        }
-
-        public virtual void LevelUp()
-        {
-            level += 1;
-            ChangeHealth(100);
-            ChangeMana(-mana + 100);
-            ChangeStamina(-stamina + 100);
-            ChangeMeleeDMG(8);
-            ChangeRangedDMG(8);
-        }
+        return health;
     }
 
-    public class Knight : Player
+    public int GetMana()
     {
-        public Knight()
-        {
-            level = 1;
-            className = "Knight";
-            experience = 0;
-            health = 100;
-            mana = 80;
-            stamina = 120;
-            meleeDMG = 25;
-            rangedDMG = 15;
-        }
-
-        public override void LevelUp()
-        {
-            level += 1;
-            ChangeHealth(100);
-            ChangeMana(-mana + 80);
-            ChangeStamina(-stamina + 120);
-            ChangeMeleeDMG(10);
-            ChangeRangedDMG(6);
-        }
+        return mana;
     }
 
-    public class Mage : Player
+    public int GetStamina()
     {
-        public Mage()
-        {
-            level = 1;
-            className = "Mage";
-            experience = 0;
-            health = 100;
-            mana = 120;
-            stamina = 80;
-            meleeDMG = 15;
-            rangedDMG = 25;
-        }
-
-        public override void LevelUp()
-        {
-            level += 1;
-            ChangeHealth(100);
-            ChangeMana(-mana + 120);
-            ChangeStamina(-stamina + 80);
-            ChangeMeleeDMG(6);
-            ChangeRangedDMG(10);
-        }
+        return stamina;
     }
 
-    public class Thief : Player
+    public int GetMeleeDMG()
     {
-        public Thief()
-        {
-            level = 1;
-            className = "Thief";
-            experience = 0;
-            health = 100;
-            mana = 100;
-            stamina = 100;
-            meleeDMG = 20;
-            rangedDMG = 20;
-        }
-
-        public override void LevelUp()
-        {
-            level += 1;
-            ChangeHealth(100);
-            ChangeMana(-mana + 100);
-            ChangeStamina(-stamina + 100);
-            ChangeMeleeDMG(8);
-            ChangeRangedDMG(8);
-        }
+        return meleeDMG;
     }
 
-    public class Monster : Entity
+    public int GetRangedDMG()
     {
-        public void ChangeLevel(int delta)
-        {
-            level = delta;
-            health += (delta - 1) * 20;
-            //mana += (delta - 1) * 20;
-            //stamina += (delta - 1) * 20;
-            meleeDMG += (delta - 1) * 4;
-            rangedDMG += (delta - 1) * 4;
-        }
-        public void MonsterGetDMG(int delta)
-        {
-            ChangeHealth(-delta);
-        }
+        return rangedDMG;
     }
 
-    public class Goblin : Monster
+    public string GetClassName()
     {
-        public Goblin()
-        {
-            level = 1;
-            className = "Goblin";
-            health = 100;
-            mana = 80;
-            stamina = 120;
-            meleeDMG = 5;
-            rangedDMG = 3;
-        }
+        return className;
     }
 
-    public class Slime : Monster
+    public void ChangeHealth(int delta)
     {
-        public Slime()
-        {
-            level = 1;
-            className = "Slime";
-            health = 100;
-            mana = 120;
-            stamina = 80;
-            meleeDMG = 3;
-            rangedDMG = 5;
-        }
+        health += delta;
     }
 
-    public class Wolf : Monster
+    public void ChangeMana(int delta)
     {
-        public Wolf()
-        {
-            level = 1;
-            className = "Wolf";
-            health = 100;
-            mana = 100;
-            stamina = 100;
-            meleeDMG = 4;
-            rangedDMG = 4;
-        }
+        mana += delta;
     }
 
+    public void ChangeStamina(int delta)
+    {
+        stamina += delta;
+    }
+
+    public void ChangeMeleeDMG(int delta)
+    {
+        meleeDMG += delta;
+    }
+
+    public void ChangeRangedDMG(int delta)
+    {
+        rangedDMG += delta;
+    }
+}
+
+public class Player : Entity
+{
+    protected int experience { get; set; }
+
+    public int GetExperience()
+    {
+        return experience;
+    }
+
+    public void ChangeExperience(int delta)
+    {
+        experience += delta;
+    }
+
+    public void PlayerGetDMG(int delta)
+    {
+        ChangeHealth(-delta);
+    }
+
+    public virtual void LevelUp()
+    {
+        level += 1;
+        ChangeHealth(100);
+        ChangeMana(-mana + 100);
+        ChangeStamina(-stamina + 100);
+        ChangeMeleeDMG(8);
+        ChangeRangedDMG(8);
+    }
+}
+
+public class Knight : Player
+{
+    public Knight()
+    {
+        level = 1;
+        className = "Knight";
+        experience = 0;
+        health = 100;
+        mana = 80;
+        stamina = 120;
+        meleeDMG = 25;
+        rangedDMG = 15;
+    }
+
+    public override void LevelUp()
+    {
+        level += 1;
+        ChangeHealth(100);
+        ChangeMana(-mana + 80);
+        ChangeStamina(-stamina + 120);
+        ChangeMeleeDMG(10);
+        ChangeRangedDMG(6);
+    }
+}
+
+public class Mage : Player
+{
+    public Mage()
+    {
+        level = 1;
+        className = "Mage";
+        experience = 0;
+        health = 100;
+        mana = 120;
+        stamina = 80;
+        meleeDMG = 15;
+        rangedDMG = 25;
+    }
+
+    public override void LevelUp()
+    {
+        level += 1;
+        ChangeHealth(100);
+        ChangeMana(-mana + 120);
+        ChangeStamina(-stamina + 80);
+        ChangeMeleeDMG(6);
+        ChangeRangedDMG(10);
+    }
+}
+
+public class Thief : Player
+{
+    public Thief()
+    {
+        level = 1;
+        className = "Thief";
+        experience = 0;
+        health = 100;
+        mana = 100;
+        stamina = 100;
+        meleeDMG = 20;
+        rangedDMG = 20;
+    }
+
+    public override void LevelUp()
+    {
+        level += 1;
+        ChangeHealth(100);
+        ChangeMana(-mana + 100);
+        ChangeStamina(-stamina + 100);
+        ChangeMeleeDMG(8);
+        ChangeRangedDMG(8);
+    }
+}
+
+public class Monster : Entity
+{
+    public void ChangeLevel(int delta)
+    {
+        level = delta;
+        health += (delta - 1) * 20;
+        //mana += (delta - 1) * 20;
+        //stamina += (delta - 1) * 20;
+        meleeDMG += (delta - 1) * 4;
+        rangedDMG += (delta - 1) * 4;
+    }
+    public void MonsterGetDMG(int delta)
+    {
+        ChangeHealth(-delta);
+    }
+}
+
+public class Goblin : Monster
+{
+    public Goblin()
+    {
+        level = 1;
+        className = "Goblin";
+        health = 100;
+        mana = 80;
+        stamina = 120;
+        meleeDMG = 5;
+        rangedDMG = 3;
+    }
+}
+
+public class Slime : Monster
+{
+    public Slime()
+    {
+        level = 1;
+        className = "Slime";
+        health = 100;
+        mana = 120;
+        stamina = 80;
+        meleeDMG = 3;
+        rangedDMG = 5;
+    }
+}
+
+public class Wolf : Monster
+{
+    public Wolf()
+    {
+        level = 1;
+        className = "Wolf";
+        health = 100;
+        mana = 100;
+        stamina = 100;
+        meleeDMG = 4;
+        rangedDMG = 4;
+    }
+}
+
+public class Gameplay
+{
     public static void Main(String[] args)
     {
         void Title()
