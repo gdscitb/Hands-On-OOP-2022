@@ -1,33 +1,39 @@
 #include <iostream>
 #include <string>
 #include <random>
+#include <typeinfo>
+using namespace std;
 class Hero
 {
 public:
-    std::string name;
-    int strength;
-    int weakness;
+    string name;
+    double damage;
+    double health;
+    double defense;
 
     Hero() {}
-    Hero(std::string n, int s, int w)
+    Hero(string n, double dmg, double w, double def)
     {
         name = n;
-        strength = s;
-        weakness = w;
+        damage = dmg;
+        health = w;
+        defense = def;
         // TODO : GENERATE BUAT PRINT INFO
     }
 };
 class Weapon
 {
 public:
-    std::string name;
-    int damage;
+    string name;
+    double damage;
+    double critical;
 
     Weapon() {}
-    Weapon(std::string n, int d)
+    Weapon(string n, double d, double c)
     {
         name = n;
         damage = d;
+        critical = c;
         // TODO : GENERATE BUAT PRINT INFO
     }
 };
@@ -35,14 +41,16 @@ public:
 class Armor
 {
 public:
-    std::string name;
-    int reduction;
+    string name;
+    double defense;
+    double addHealth;
 
     Armor() {}
-    Armor(std::string n, int r)
+    Armor(string n, double def, double aH)
     {
         name = n;
-        reduction = r;
+        defense = def;
+        addHealth = aH;
         // TODO : GENERATE BUAT PRINT INFO
     }
 };
@@ -64,19 +72,19 @@ public:
     }
 };
 
-Hero hero1("Saitama", 9, 95);
-Hero hero2("Chid Kagenou", 8, 90);
-Hero hero3("Yoriichi Tsugikuni", 10, 85);
-Hero hero4("Loid Forger", 6, 99);
+Hero hero1("Saitama", 20, 95, 5);
+Hero hero2("Chid Kagenou", 14, 90, 7);
+Hero hero3("Yoriichi Tsugikuni", 18, 85, 4);
+Hero hero4("Loid Forger", 12, 96, 4);
 
-Weapon weapon1("Sword", 3);
-Weapon weapon2("Pistols", 2);
-Weapon weapon3("Arrow", 4);
-Weapon weapon4("Spear", 5);
+Weapon weapon1("Sword", 10, 25);
+Weapon weapon2("Pistols", 6, 30);
+Weapon weapon3("Arrow", 5, 33);
+Weapon weapon4("Spear", 8, 23);
 
-Armor armor1("Gold", 3);
-Armor armor2("Silver", 2);
-Armor armor3("Bronze", 1);
+Armor armor1("Gold", 20, 10);
+Armor armor2("Silver", 15, 20);
+Armor armor3("Bronze", 10, 30);
 
 class Bot : public Hero, public Weapon, public Armor
 {
@@ -84,16 +92,16 @@ public:
     Hero chosenHero;
     Weapon chosenWeapon;
     Armor chosenArmor;
-    std::mt19937 rng;
+    mt19937 rng;
 
     Bot()
     {
-        rng.seed(std::random_device()());
+        rng.seed(random_device()());
     }
 
     void generateChoice()
     {
-        std::uniform_int_distribution<std::mt19937::result_type> heroDist(1, 4);
+        uniform_int_distribution<mt19937::result_type> heroDist(1, 4);
         int heroChoice = heroDist(rng);
 
         switch (heroChoice)
@@ -112,7 +120,7 @@ public:
             break;
         }
 
-        std::uniform_int_distribution<std::mt19937::result_type> weaponDist(1, 4);
+        uniform_int_distribution<mt19937::result_type> weaponDist(1, 4);
         int weaponChoice = weaponDist(rng);
 
         switch (weaponChoice)
@@ -131,7 +139,7 @@ public:
             break;
         }
 
-        std::uniform_int_distribution<std::mt19937::result_type> armorDist(1, 3);
+        uniform_int_distribution<mt19937::result_type> armorDist(1, 3);
         int armorChoice = armorDist(rng);
 
         switch (armorChoice)
@@ -146,36 +154,48 @@ public:
             chosenArmor = armor3;
             break;
         }
-        chosenHero.strength += chosenWeapon.damage;
-        chosenHero.weakness += chosenArmor.reduction;
+    }
+    void initialInfo()
+    {
+        cout << "Bot :\nHero \t: " << chosenHero.name << " ( Damage:" << chosenHero.damage << ", Health:" << chosenHero.health << ", Defense:" << chosenHero.defense << "% )" << endl;
+        cout << "Weapon : " << chosenWeapon.name << " ( Additional Damage: " << chosenWeapon.damage << ", Critical: " << chosenWeapon.critical << "% )" << endl;
+        cout << "Armor : " << chosenArmor.name << "( Addition Health: " << chosenArmor.addHealth << ", Defense: " << chosenArmor.defense << "% )" << endl;
+    }
+
+    void resultInfo()
+    {
+        chosenHero.damage += chosenWeapon.damage;
+        chosenHero.damage += (chosenWeapon.critical / 100) * chosenHero.damage;
+        chosenHero.health += chosenArmor.addHealth;
+        chosenHero.defense += chosenArmor.defense;
+        ;
+        cout << "Total Attack: " << chosenHero.damage << endl;
+        cout << "Total Health: " << chosenHero.health << endl;
+        cout << "Total Defense: " << chosenHero.defense << "%" << endl;
     }
 };
 
 int main()
 {
-
-    // GENERATE BOT
     Bot bot;
     bot.generateChoice();
-    std::cout << "Bot memilih hero " << bot.chosenHero.name << std::endl;
-    std::cout << "Bot memilih senjata " << bot.chosenWeapon.name << std::endl;
-    std::cout << "Bot memilih armor " << bot.chosenArmor.name << std::endl;
-    std::cout << "Power: " << bot.chosenHero.strength << std::endl;
-    std::cout << "Health: " << bot.chosenHero.weakness << std::endl;
+    bot.initialInfo();
+    bot.resultInfo();
 
-    std::cout << "Pilih hero yang ingin digunakan:" << std::endl;
-    std::cout << "1. " << hero1.name << "\t\t( Attack : " << hero1.strength << ", Health : " << hero1.weakness << " )" << std::endl;
-    std::cout << "2. " << hero2.name << "\t\t( Attack : " << hero2.strength << ", Health : " << hero2.weakness << " )" << std::endl;
-    std::cout << "3. " << hero3.name << "\t( Attack : " << hero3.strength << ", Health : " << hero3.weakness << " )" << std::endl;
-    std::cout << "4. " << hero4.name << "\t\t( Attack : " << hero4.strength << ", Health : " << hero4.weakness << " )" << std::endl;
+    cout << "\nPilih hero yang ingin digunakan:" << endl;
+    cout << "1. " << hero1.name << "\t\t( Damage : " << hero1.damage << ", Health : " << hero1.health << ", Defense : " << hero1.defense << "% )" << endl;
+    cout << "2. " << hero2.name << "\t\t( Damage : " << hero2.damage << ", Health : " << hero2.health << ", Defense : " << hero2.defense << "% )" << endl;
+    cout << "3. " << hero3.name << "\t( Damage : " << hero3.damage << ", Health : " << hero3.health << ", Defense : " << hero3.defense << "% )" << endl;
+    cout << "4. " << hero4.name << "\t\t( Damage : " << hero4.damage << ", Health : " << hero4.health << ", Defense : " << hero4.defense << "% )" << endl;
 
     int choice;
-    std::cin >> choice;
-
-    while (choice < 1 || choice > 4)
+    cin >> choice;
+    while (cin.fail() || choice < 1 || choice > 4)
     {
-        std::cout << "Pilihan tidak valid. Silakan pilih kembali:" << std::endl;
-        std::cin >> choice;
+        cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
+        cin.clear();                                         // untuk membersihkan error flag
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // untuk menghapus input yang tidak valid
+        cin >> choice;
     }
 
     Hero chosenHero;
@@ -195,21 +215,22 @@ int main()
         break;
     }
 
-    std::cout << "Anda telah memilih hero " << chosenHero.name << std::endl;
+    cout << "Anda telah memilih hero " << chosenHero.name << endl;
 
-    std::cout << "Pilih senjata yang ingin digunakan:" << std::endl;
-    std::cout << "1. " << weapon1.name << "\t( Damage addition : " << weapon1.damage << " % )" << std::endl;
-    std::cout << "2. " << weapon2.name << "\t( Damage addition : " << weapon2.damage << " % )" << std::endl;
-    std::cout << "3. " << weapon3.name << "\t( Damage addition : " << weapon3.damage << " % )" << std::endl;
-    std::cout << "4. " << weapon4.name << "\t( Damage addition : " << weapon4.damage << " % )" << std::endl;
+    cout << "\nPilih senjata yang ingin digunakan:" << endl;
+    cout << "1. " << weapon1.name << "\t( Damage addition : " << weapon1.damage << ", Critical: " << weapon1.critical << "% )" << endl;
+    cout << "2. " << weapon2.name << "\t( Damage addition : " << weapon2.damage << ", Critical: " << weapon2.critical << "% )" << endl;
+    cout << "3. " << weapon3.name << "\t( Damage addition : " << weapon3.damage << ", Critical: " << weapon3.critical << "% )" << endl;
+    cout << "4. " << weapon4.name << "\t( Damage addition : " << weapon4.damage << ", Critical: " << weapon4.critical << "% )" << endl;
 
     int weaponChoice;
-    std::cin >> weaponChoice;
-
-    while (weaponChoice < 1 || weaponChoice > 4)
+    cin >> weaponChoice;
+    while (cin.fail() || weaponChoice < 1 || weaponChoice > 4)
     {
-        std::cout << "Pilihan tidak valid. Silakan pilih kembali:" << std::endl;
-        std::cin >> weaponChoice;
+        cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
+        cin.clear();                                         // untuk membersihkan error flag
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // untuk menghapus input yang tidak valid
+        cin >> weaponChoice;
     }
 
     Weapon chosenWeapon;
@@ -229,24 +250,26 @@ int main()
         break;
     }
 
-    std::cout << "Anda telah memilih " << chosenHero.name << " dengan senjata " << chosenWeapon.name << std::endl;
-    chosenHero.strength += chosenWeapon.damage;
-    std::cout << "Kekuatan hero Anda sekarang adalah " << chosenHero.strength << std::endl;
+    cout << "Anda telah memilih " << chosenHero.name << " dengan senjata " << chosenWeapon.name << endl;
+    chosenHero.damage += chosenWeapon.damage;
+    chosenHero.damage += (chosenWeapon.critical / 100) * chosenHero.damage;
+    cout << "Damage hero Anda sekarang adalah " << chosenHero.damage << endl;
 
-    std::cout << "Pilih armor yang ingin digunakan:" << std::endl;
-    std::cout << "1. " << armor1.name << "\t\t(Reduction Damage : " << armor1.reduction << " )" << std::endl;
-    std::cout << "2. " << armor2.name << "\t(Reduction Damage : " << armor2.reduction << " )" << std::endl;
-    std::cout << "3. " << armor3.name << "\t(Reduction Damage : " << armor3.reduction << " )" << std::endl;
+    cout << "\nPilih armor yang ingin digunakan:" << endl;
+    cout << "1. " << armor1.name << "\t\t( Additional Health : " << armor1.addHealth << ", Defense : " << armor1.defense << "% )" << endl;
+    cout << "2. " << armor2.name << "\t( Additional Health : " << armor2.addHealth << ", Defense : " << armor2.defense << "% )" << endl;
+    cout << "3. " << armor3.name << "\t( Additional Health : " << armor3.addHealth << ", Defense : " << armor3.defense << "% )" << endl;
 
     int armorChoice;
-    std::cin >> armorChoice;
-
-    while (armorChoice < 1 || armorChoice > 3)
+    cin >> armorChoice;
+    while (cin.fail() || armorChoice < 1 || armorChoice > 4)
     {
-        std::cout << "Pilihan tidak valid. Silakan pilih kembali:" << std::endl;
-        std::cin >> armorChoice;
+        cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
+        cin.clear();                                         // untuk membersihkan error flag
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // untuk menghapus input yang tidak valid
+        cin >> armorChoice;
     }
-
+    
     Armor chosenArmor;
     switch (armorChoice)
     {
@@ -260,18 +283,17 @@ int main()
         chosenArmor = armor3;
         break;
     }
-
-    std::cout << "Anda telah memilih armor " << chosenArmor.name << std::endl;
-    chosenHero.weakness += chosenArmor.reduction;
-    std::cout << "Kekuatan hero Anda sekarang adalah " << chosenHero.strength << std::endl
-              << "\n";
+    cout << "Anda telah memilih " << chosenHero.name << " dengan senjata " << chosenWeapon.name << ", dan armor " << chosenArmor.name << endl;
+    chosenHero.health += chosenArmor.addHealth;
+    chosenHero.defense += chosenArmor.defense;
     Player player(chosenHero, chosenWeapon, chosenArmor);
 
-    std::cout << "Player: " << player.chosenHero.name << std::endl;
-    std::cout << "Weapon: " << player.chosenWeapon.name << std::endl;
-    std::cout << "Armor: " << player.chosenArmor.name << std::endl;
-    std::cout << "Power: " << player.chosenHero.strength << std::endl;
-    std::cout << "Health: " << player.chosenHero.weakness << std::endl;
+    cout << "\nPlayer: " << player.chosenHero.name << endl;
+    cout << "Weapon: " << player.chosenWeapon.name << endl;
+    cout << "Armor: " << player.chosenArmor.name << endl;
+    cout << "Total Attack: " << player.chosenHero.damage << endl;
+    cout << "Total Health: " << player.chosenHero.health << endl;
+    cout << "Total Defense: " << player.chosenHero.defense << "% " << endl;
 
     return 0;
 }
