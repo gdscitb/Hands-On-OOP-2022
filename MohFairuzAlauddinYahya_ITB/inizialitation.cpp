@@ -4,74 +4,40 @@
 #include <typeinfo>
 #include "inizialitation.h"
 using namespace std;
-class Hero
+Hero::Hero(string n, double dmg, double w, double def)
 {
-public:
-    string name;
-    double damage;
-    double health;
-    double defense;
+    name = n;
+    damage = dmg;
+    health = w;
+    defense = def;
+    // TODO : GENERATE BUAT PRINT INFO
+}
+Weapon::Weapon(string n, double d, double c)
 
-    Hero() {}
-    Hero(string n, double dmg, double w, double def)
-    {
-        name = n;
-        damage = dmg;
-        health = w;
-        defense = def;
-        // TODO : GENERATE BUAT PRINT INFO
-    }
-};
-class Weapon
 {
-public:
-    string name;
-    double damage;
-    double critical;
+    name = n;
+    damage = d;
+    critical = c;
+    // TODO : GENERATE BUAT PRINT INFO
+}
 
-    Weapon() {}
-    Weapon(string n, double d, double c)
-    {
-        name = n;
-        damage = d;
-        critical = c;
-        // TODO : GENERATE BUAT PRINT INFO
-    }
-};
+Armor::Armor(string n, double def, double aH)
 
-class Armor
 {
-public:
-    string name;
-    double defense;
-    double addHealth;
+    name = n;
+    defense = def;
+    addHealth = aH;
+    // TODO : GENERATE BUAT PRINT INFO
+}
 
-    Armor() {}
-    Armor(string n, double def, double aH)
-    {
-        name = n;
-        defense = def;
-        addHealth = aH;
-        // TODO : GENERATE BUAT PRINT INFO
-    }
-};
 // Prinsip Multi-inheritance
-class Player : public Hero, public Weapon, public Armor
-{
-public:
-    Hero chosenHero;
-    Weapon chosenWeapon;
-    Armor chosenArmor;
 
-    Player() {}
-    Player(Hero h, Weapon w, Armor a) : Hero(h), Weapon(w), Armor(a)
-    {
-        chosenHero = h;
-        chosenWeapon = w;
-        chosenArmor = a;
-        // TODO : GENERATE BUAT PRINT INFO
-    }
-};
+Player::Player(string hName, double hDmg, double hHlth, double hDef, string wName, double wDmg, double wCrit, string aName, double aDef, double aHlth) : Hero(hName, hDmg, hHlth, hDef), Weapon(wName, wDmg, wCrit), Armor(aName, aDef, aHlth)
+{
+    chosenHero = Hero(hName, hDmg, hHlth, hDef);
+    chosenWeapon = Weapon(wName, wDmg, wCrit);
+    chosenArmor = Armor(aName, aDef, aHlth);
+}
 
 Hero hero1("Saitama", 20, 95, 5);
 Hero hero2("Chid Kagenou", 14, 90, 7);
@@ -87,66 +53,58 @@ Armor armor1("Gold", 20, 10);
 Armor armor2("Silver", 15, 20);
 Armor armor3("Bronze", 10, 30);
 
-class Bot : public Hero, public Weapon, public Armor
+Bot::Bot()
 {
-public:
-    Hero chosenHero;
-    Weapon chosenWeapon;
-    Armor chosenArmor;
-    mt19937 rng;
+    rng.seed(rd());
+}
 
-    Bot()
+void Bot::generateChoice()
+{
+    heroDist = uniform_int_distribution<mt19937::result_type>(1, 4);
+    int heroChoice = heroDist(rng);
+
+    switch (heroChoice)
     {
-        rng.seed(random_device()());
+    case 1:
+        chosenHero = hero1;
+        break;
+    case 2:
+        chosenHero = hero2;
+        break;
+    case 3:
+        chosenHero = hero3;
+        break;
+    case 4:
+        chosenHero = hero4;
+        break;
     }
 
-    void generateChoice()
+    uniform_int_distribution<mt19937::result_type> weaponDist(1, 4);
+    int weaponChoice = weaponDist(rng);
+
+    switch (weaponChoice)
     {
-        uniform_int_distribution<mt19937::result_type> heroDist(1, 4);
-        int heroChoice = heroDist(rng);
+    case 1:
+        chosenWeapon = weapon1;
+        break;
+    case 2:
+        chosenWeapon = weapon2;
+        break;
+    case 3:
+        chosenWeapon = weapon3;
+        break;
+    case 4:
+        chosenWeapon = weapon4;
+        break;
+    }
 
-        switch (heroChoice)
-        {
-        case 1:
-            chosenHero = hero1;
-            break;
-        case 2:
-            chosenHero = hero2;
-            break;
-        case 3:
-            chosenHero = hero3;
-            break;
-        case 4:
-            chosenHero = hero4;
-            break;
-        }
+    uniform_int_distribution<mt19937::result_type> armorDist(1, 3);
+    int armorChoice = armorDist(rng);
 
-        uniform_int_distribution<mt19937::result_type> weaponDist(1, 4);
-        int weaponChoice = weaponDist(rng);
-
-        switch (weaponChoice)
-        {
-        case 1:
-            chosenWeapon = weapon1;
-            break;
-        case 2:
-            chosenWeapon = weapon2;
-            break;
-        case 3:
-            chosenWeapon = weapon3;
-            break;
-        case 4:
-            chosenWeapon = weapon4;
-            break;
-        }
-
-        uniform_int_distribution<mt19937::result_type> armorDist(1, 3);
-        int armorChoice = armorDist(rng);
-
-        switch (armorChoice)
-        {
-        case 1:
-            chosenArmor = armor1;
+    switch (armorChoice)
+    {
+    case 1:
+        chosenArmor = armor1;
             break;
         case 2:
             chosenArmor = armor2;
