@@ -1,0 +1,15 @@
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\bin\Debug\net6.0\Hands-On-OOP-2022.exe
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\bin\Debug\net6.0\Hands-On-OOP-2022.deps.json
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\bin\Debug\net6.0\Hands-On-OOP-2022.runtimeconfig.json
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\bin\Debug\net6.0\Hands-On-OOP-2022.dll
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\bin\Debug\net6.0\Hands-On-OOP-2022.pdb
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\obj\Debug\net6.0\Hands-On-OOP-2022.csproj.AssemblyReference.cache
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\obj\Debug\net6.0\Hands-On-OOP-2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\obj\Debug\net6.0\Hands-On-OOP-2022.AssemblyInfoInputs.cache
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\obj\Debug\net6.0\Hands-On-OOP-2022.AssemblyInfo.cs
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\obj\Debug\net6.0\Hands-On-OOP-2022.csproj.CoreCompileInputs.cache
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\obj\Debug\net6.0\Hands-On-OOP-2022.dll
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\obj\Debug\net6.0\refint\Hands-On-OOP-2022.dll
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\obj\Debug\net6.0\Hands-On-OOP-2022.pdb
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\obj\Debug\net6.0\Hands-On-OOP-2022.genruntimeconfig.cache
+C:\Users\Circle Hero\source\repos\Hands-On-OOP-2022\Hands-On-OOP-2022\obj\Debug\net6.0\ref\Hands-On-OOP-2022.dll
