@@ -1,5 +1,8 @@
 ## Penjelasan program
 
+Program ini adalah program untuk berlangganan Welkin atau Battle Pass di game Genshin Impact.
+Program ini menggunakan bahasa pemrograman Java.
+
 # Cara menjalankan file java
 
 Langkah-langkah untuk menjalankan program:
