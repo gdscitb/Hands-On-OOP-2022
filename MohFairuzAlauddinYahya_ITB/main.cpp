@@ -2,6 +2,7 @@
 #include <string>
 #include <random>
 #include <typeinfo>
+#include <windows.h> // for windows
 using namespace std;
 
 // ! INTERFACE
@@ -130,24 +131,10 @@ public:
 
     void generateChoice()
     {
-        uniform_int_distribution<mt19937::result_type> heroDist(1, 4);
+        vector<Hero> heroes = {hero1, hero2, hero3, hero4};
+        uniform_int_distribution<int> heroDist(0, heroes.size() - 1);
         int heroChoice = heroDist(rng);
-
-        switch (heroChoice)
-        {
-        case 1:
-            chosenHero = hero1;
-            break;
-        case 2:
-            chosenHero = hero2;
-            break;
-        case 3:
-            chosenHero = hero3;
-            break;
-        case 4:
-            chosenHero = hero4;
-            break;
-        }
+        chosenHero = heroes[heroChoice]; // Pemilihan hero sesuai dengan indeks yang dipilih
 
         uniform_int_distribution<mt19937::result_type> weaponDist(1, 4);
         int weaponChoice = weaponDist(rng);
@@ -292,298 +279,361 @@ public:
     }
 };
 
+void loading(string text)
+{
+    system("COLOR 0e");
+    system("cls");
+    printf("\e[?25l");
+
+    // Set ASCII to print special character.
+    // Code page 437
+    SetConsoleCP(437);
+    SetConsoleOutputCP(437);
+    int bar1 = 177, bar2 = 219;
+
+    cout << "\n\n\n\t\t\t\t" + text + "...";
+    cout << "\n\n\n\t\t\t\t";
+
+    for (int i = 0; i < 25; i++)
+        cout << (char)bar1;
+
+    cout << "\r";
+    cout << "\t\t\t\t";
+    for (int i = 0; i < 25; i++)
+    {
+        cout << (char)bar2;
+        Sleep(150);
+    }
+
+    cout << "\n\t\t\t\t" << (char)1 << "!";
+    system("Pause");
+}
 int main()
 {
-    // ! SHOW BOT'S HERO
-    Bot bot;
-    bot.generateChoice();
-    bot.initialInfo();
-    bot.resultInfo();
-
-    // ! PLAYER CHOOSE HERO
-    cout << "\nPilih hero yang ingin digunakan:" << endl;
-    cout << "1. " << hero1.name << "\t\t( Damage : " << hero1.damage << ", Health : " << hero1.health << ", Defense : " << hero1.defense << "%, Mana: " << hero1.mana << " )" << endl;
-    cout << "2. " << hero2.name << "\t\t( Damage : " << hero2.damage << ", Health : " << hero2.health << ", Defense : " << hero2.defense << "%, Mana: " << hero2.mana << " )" << endl;
-    cout << "3. " << hero3.name << "\t( Damage : " << hero3.damage << ", Health : " << hero3.health << ", Defense : " << hero3.defense << "%, Mana: " << hero3.mana << " )" << endl;
-    cout << "4. " << hero4.name << "\t\t( Damage : " << hero4.damage << ", Health : " << hero4.health << ", Defense : " << hero4.defense << "%, Mana: " << hero4.mana << " )" << endl;
-
-    int choice;
-    cin >> choice;
-    while (cin.fail() || choice < 1 || choice > 4)
+    cout << "========BATTLE MASTER==========\n\n"
+         << endl;
+    cout << "Are you ready to play the game (Y/N)?" << endl;
+    string start;
+    cin >> start;
+    while (start == "Y" || start == "y")
     {
-        cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
-        cin.clear();                                         // untuk membersihkan error flag
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // untuk menghapus input yang tidak valid
+        // * ADDING LOADING SCREEN
+        loading("Enter The Game");
+
+        // ! SHOW BOT'S HERO
+        system("cls");
+        cout << "========BATTLE MASTER==========\n\n"
+             << endl;
+
+        cout << "Bot Generate Hero" << endl;
+        for (int i = 0; i < 20; i++)
+        {
+            cout << ". ";
+            Sleep(200);
+        }
+        cout << endl;
+        system("cls");
+        cout << "========BATTLE MASTER==========\n\n"
+             << endl;
+        Bot bot;
+        bot.generateChoice();
+        bot.initialInfo();
+        bot.resultInfo();
+
+        // ! PLAYER CHOOSE HERO
+        cout << "\nPilih hero yang ingin digunakan:" << endl;
+        cout << "1. " << hero1.name << "\t\t( Damage : " << hero1.damage << ", Health : " << hero1.health << ", Defense : " << hero1.defense << "%, Mana: " << hero1.mana << " )" << endl;
+        cout << "2. " << hero2.name << "\t\t( Damage : " << hero2.damage << ", Health : " << hero2.health << ", Defense : " << hero2.defense << "%, Mana: " << hero2.mana << " )" << endl;
+        cout << "3. " << hero3.name << "\t( Damage : " << hero3.damage << ", Health : " << hero3.health << ", Defense : " << hero3.defense << "%, Mana: " << hero3.mana << " )" << endl;
+        cout << "4. " << hero4.name << "\t\t( Damage : " << hero4.damage << ", Health : " << hero4.health << ", Defense : " << hero4.defense << "%, Mana: " << hero4.mana << " )" << endl;
+
+        int choice;
         cin >> choice;
-    }
-
-    Hero chosenHero;
-    switch (choice)
-    {
-    case 1:
-        chosenHero = hero1;
-        break;
-    case 2:
-        chosenHero = hero2;
-        break;
-    case 3:
-        chosenHero = hero3;
-        break;
-    case 4:
-        chosenHero = hero4;
-        break;
-    }
-
-    cout << "Anda telah memilih hero " << chosenHero.name << endl;
-
-    // ! PLAYER CHOOSE WEAPON
-    cout << "\nPilih senjata yang ingin digunakan:" << endl;
-    cout << "1. " << sword.name << "\t( Damage addition : " << sword.damage << ", Critical: " << sword.critical << "% )" << endl;
-    cout << "2. " << pistols.name << "\t( Damage addition : " << pistols.damage << ", Critical: " << pistols.critical << "% )" << endl;
-    cout << "3. " << arrow.name << "\t( Damage addition : " << arrow.damage << ", Critical: " << arrow.critical << "% )" << endl;
-    cout << "4. " << spear.name << "\t( Damage addition : " << spear.damage << ", Critical: " << spear.critical << "% )" << endl;
-
-    int weaponChoice;
-    cin >> weaponChoice;
-    while (cin.fail() || weaponChoice < 1 || weaponChoice > 4)
-    {
-        cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
-        cin.clear();                                         // untuk membersihkan error flag
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // untuk menghapus input yang tidak valid
-        cin >> weaponChoice;
-    }
-
-    Weapon chosenWeapon;
-    switch (weaponChoice)
-    {
-    case 1:
-        chosenWeapon = sword;
-        chosenHero.addJurus("Star Strike", 15, 10);
-        chosenHero.addJurus("Super Air Strike", 20, 18);
-        chosenHero.addJurus("Sword Stab", 25, 23);
-        chosenHero.addJurus("X strike", 30, 30);
-        break;
-    case 2:
-        chosenWeapon = pistols;
-        chosenHero.addJurus("Crazy Shot", 15, 10);
-        chosenHero.addJurus("Destroy Shot", 20, 18);
-        chosenHero.addJurus("Crazy Gun", 25, 23);
-        chosenHero.addJurus("Focus Shot", 30, 30);
-        break;
-    case 3:
-        chosenWeapon = arrow;
-        chosenHero.addJurus("Falling Star", 15, 10);
-        chosenHero.addJurus("Shied Destroy", 20, 18);
-        chosenHero.addJurus("Concentration", 25, 23);
-        chosenHero.addJurus("Triangle of Light", 30, 30);
-        break;
-    case 4:
-        chosenWeapon = spear;
-        chosenHero.addJurus("Deadly Thrust", 15, 10);
-        chosenHero.addJurus("Rotate Spear", 20, 18);
-        chosenHero.addJurus("Breaking Limit", 25, 23);
-        chosenHero.addJurus("Twin Brother", 30, 30);
-        break;
-    }
-
-    cout << "Anda telah memilih " << chosenHero.name << " dengan senjata " << chosenWeapon.name << endl;
-    chosenHero.damage += chosenWeapon.damage;
-    chosenHero.damage += (chosenWeapon.critical / 100) * chosenHero.damage;
-    cout << "Damage hero Anda sekarang adalah " << chosenHero.damage << endl;
-
-    // ! PLAYER CHOOSE ARMOR
-    cout << "\nPilih armor yang ingin digunakan:" << endl;
-    cout << "1. " << gold.name << "\t\t( Additional Health : " << gold.addHealth << ", Defense : " << gold.defense << "%, Additional Mana: " << gold.addMana << " )" << endl;
-    cout << "2. " << silver.name << "\t( Additional Health : " << silver.addHealth << ", Defense : " << silver.defense << "%, Additional Mana: " << silver.addMana << " )" << endl;
-    cout << "3. " << bronze.name << "\t( Additional Health : " << bronze.addHealth << ", Defense : " << bronze.defense << "%, Additional Mana: " << bronze.addMana << " )" << endl;
-
-    int armorChoice;
-    cin >> armorChoice;
-    while (cin.fail() || armorChoice < 1 || armorChoice > 4)
-    {
-        cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
-        cin.clear();                                         // untuk membersihkan error flag
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // untuk menghapus input yang tidak valid
-        cin >> armorChoice;
-    }
-
-    Armor chosenArmor;
-    switch (armorChoice)
-    {
-    case 1:
-        chosenArmor = gold;
-        break;
-    case 2:
-        chosenArmor = silver;
-        break;
-    case 3:
-        chosenArmor = bronze;
-        break;
-    }
-    cout << "Anda telah memilih " << chosenHero.name << " dengan senjata " << chosenWeapon.name << ", dan armor " << chosenArmor.name << endl;
-    chosenHero.health += chosenArmor.addHealth;
-    chosenHero.defense += chosenArmor.defense;
-    chosenHero.mana += chosenArmor.addMana;
-    // * WHAT USER GET WILL BE INSTANCE ON PLAYER
-    Player player(chosenHero, chosenWeapon, chosenArmor);
-
-    // ! POP UP RESULT PLAYER'S HERO INFO
-    cout << "\nPlayer: " << player.chosenHero.name << endl;
-    cout << "Weapon: " << player.chosenWeapon.name << endl;
-    cout << "Armor: " << player.chosenArmor.name << endl;
-    cout << "Total Attack: " << player.chosenHero.damage << endl;
-    cout << "Total Health: " << player.chosenHero.health << endl;
-    cout << "Total Defense: " << player.chosenHero.defense << "% " << endl;
-    cout << "Total Mana: " << player.chosenHero.mana << endl;
-
-    // ! USING ROCK PAPER SCISSORS TO DETERMINE WHO'S PLAYS
-    GamePlay bkg(player.chosenHero, bot.chosenHero);
-
-    while (player.chosenHero.health > 0 && bot.chosenHero.health > 0)
-    {
-
-        cout << "\nPilih Giliran:" << endl;
-        cout << "1. Rock " << endl;
-        cout << "2. Paper" << endl;
-        cout << "3. Scissors" << endl;
-        int turnPlayer;
-        cin >> turnPlayer;
-        while (cin.fail() || turnPlayer < 1 || turnPlayer > 3)
+        // system("cls");
+        while (cin.fail() || choice < 1 || choice > 4)
         {
             cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
             cin.clear();                                         // untuk membersihkan error flag
             cin.ignore(numeric_limits<streamsize>::max(), '\n'); // untuk menghapus input yang tidak valid
-            cin >> turnPlayer;
+            cin >> choice;
         }
 
-        switch (turnPlayer)
+        Hero chosenHero;
+        switch (choice)
         {
         case 1:
-            bkg.userChoice = "rock";
+            chosenHero = hero1;
             break;
         case 2:
-            bkg.userChoice = "paper";
+            chosenHero = hero2;
             break;
         case 3:
-            bkg.userChoice = "scissors";
+            chosenHero = hero3;
+            break;
+        case 4:
+            chosenHero = hero4;
             break;
         }
 
-        string winner = bkg.getWinner();
+        cout << "Anda telah memilih hero " << chosenHero.name << endl;
 
-        if (winner == "user")
+        // ! PLAYER CHOOSE WEAPON
+        cout << "\nPilih senjata yang ingin digunakan:" << endl;
+        cout << "1. " << sword.name << "\t( Damage addition : " << sword.damage << ", Critical: " << sword.critical << "% )" << endl;
+        cout << "2. " << pistols.name << "\t( Damage addition : " << pistols.damage << ", Critical: " << pistols.critical << "% )" << endl;
+        cout << "3. " << arrow.name << "\t( Damage addition : " << arrow.damage << ", Critical: " << arrow.critical << "% )" << endl;
+        cout << "4. " << spear.name << "\t( Damage addition : " << spear.damage << ", Critical: " << spear.critical << "% )" << endl;
+
+        int weaponChoice;
+        cin >> weaponChoice;
+        while (cin.fail() || weaponChoice < 1 || weaponChoice > 4)
         {
-            double temporaryDamagePlayer;
-            int choice;
-            temporaryDamagePlayer = player.chosenHero.damage;
-            vector<int> skillIndex;
+            cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
+            cin.clear();                                         // untuk membersihkan error flag
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // untuk menghapus input yang tidak valid
+            cin >> weaponChoice;
+        }
 
-            while (true)
+        Weapon chosenWeapon;
+        switch (weaponChoice)
+        {
+        case 1:
+            chosenWeapon = sword;
+            chosenHero.addJurus("Star Strike", 15, 10);
+            chosenHero.addJurus("Super Air Strike", 20, 18);
+            chosenHero.addJurus("Sword Stab", 25, 23);
+            chosenHero.addJurus("X strike", 30, 30);
+            break;
+        case 2:
+            chosenWeapon = pistols;
+            chosenHero.addJurus("Crazy Shot", 15, 10);
+            chosenHero.addJurus("Destroy Shot", 20, 18);
+            chosenHero.addJurus("Crazy Gun", 25, 23);
+            chosenHero.addJurus("Focus Shot", 30, 30);
+            break;
+        case 3:
+            chosenWeapon = arrow;
+            chosenHero.addJurus("Falling Star", 15, 10);
+            chosenHero.addJurus("Shied Destroy", 20, 18);
+            chosenHero.addJurus("Concentration", 25, 23);
+            chosenHero.addJurus("Triangle of Light", 30, 30);
+            break;
+        case 4:
+            chosenWeapon = spear;
+            chosenHero.addJurus("Deadly Thrust", 15, 10);
+            chosenHero.addJurus("Rotate Spear", 20, 18);
+            chosenHero.addJurus("Breaking Limit", 25, 23);
+            chosenHero.addJurus("Twin Brother", 30, 30);
+            break;
+        }
+
+        cout << "Anda telah memilih " << chosenHero.name << " dengan senjata " << chosenWeapon.name << endl;
+        chosenHero.damage += chosenWeapon.damage;
+        chosenHero.damage += (chosenWeapon.critical / 100) * chosenHero.damage;
+        cout << "Damage hero Anda sekarang adalah " << chosenHero.damage << endl;
+
+        // ! PLAYER CHOOSE ARMOR
+        cout << "\nPilih armor yang ingin digunakan:" << endl;
+        cout << "1. " << gold.name << "\t\t( Additional Health : " << gold.addHealth << ", Defense : " << gold.defense << "%, Additional Mana: " << gold.addMana << " )" << endl;
+        cout << "2. " << silver.name << "\t( Additional Health : " << silver.addHealth << ", Defense : " << silver.defense << "%, Additional Mana: " << silver.addMana << " )" << endl;
+        cout << "3. " << bronze.name << "\t( Additional Health : " << bronze.addHealth << ", Defense : " << bronze.defense << "%, Additional Mana: " << bronze.addMana << " )" << endl;
+
+        int armorChoice;
+        cin >> armorChoice;
+        while (cin.fail() || armorChoice < 1 || armorChoice > 4)
+        {
+            cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
+            cin.clear();                                         // untuk membersihkan error flag
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // untuk menghapus input yang tidak valid
+            cin >> armorChoice;
+        }
+
+        Armor chosenArmor;
+        switch (armorChoice)
+        {
+        case 1:
+            chosenArmor = gold;
+            break;
+        case 2:
+            chosenArmor = silver;
+            break;
+        case 3:
+            chosenArmor = bronze;
+            break;
+        }
+        cout << "Anda telah memilih " << chosenHero.name << " dengan senjata " << chosenWeapon.name << ", dan armor " << chosenArmor.name << endl;
+        chosenHero.health += chosenArmor.addHealth;
+        chosenHero.defense += chosenArmor.defense;
+        chosenHero.mana += chosenArmor.addMana;
+        // * WHAT USER GET WILL BE INSTANCE ON PLAYER
+        Player player(chosenHero, chosenWeapon, chosenArmor);
+
+        // ! POP UP RESULT PLAYER'S HERO INFO
+        cout << "\nPlayer: " << player.chosenHero.name << endl;
+        cout << "Weapon: " << player.chosenWeapon.name << endl;
+        cout << "Armor: " << player.chosenArmor.name << endl;
+        cout << "Total Attack: " << player.chosenHero.damage << endl;
+        cout << "Total Health: " << player.chosenHero.health << endl;
+        cout << "Total Defense: " << player.chosenHero.defense << "% " << endl;
+        cout << "Total Mana: " << player.chosenHero.mana << endl;
+
+        // ! USING ROCK PAPER SCISSORS TO DETERMINE WHO'S PLAYS
+        loading("Enter The Match");
+        GamePlay bkg(player.chosenHero, bot.chosenHero);
+
+        while (player.chosenHero.health > 0 && bot.chosenHero.health > 0)
+        {
+
+            cout << "\nPilih Giliran:" << endl;
+            cout << "1. Rock " << endl;
+            cout << "2. Paper" << endl;
+            cout << "3. Scissors" << endl;
+            int turnPlayer;
+            cin >> turnPlayer;
+            while (cin.fail() || turnPlayer < 1 || turnPlayer > 3)
             {
-                for (int i = 0; i < player.chosenHero.skillList.size(); i++)
+                cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
+                cin.clear();                                         // untuk membersihkan error flag
+                cin.ignore(numeric_limits<streamsize>::max(), '\n'); // untuk menghapus input yang tidak valid
+                cin >> turnPlayer;
+            }
+
+            switch (turnPlayer)
+            {
+            case 1:
+                bkg.userChoice = "rock";
+                break;
+            case 2:
+                bkg.userChoice = "paper";
+                break;
+            case 3:
+                bkg.userChoice = "scissors";
+                break;
+            }
+
+            string winner = bkg.getWinner();
+
+            if (winner == "user")
+            {
+                double temporaryDamagePlayer;
+                int choice;
+                temporaryDamagePlayer = player.chosenHero.damage;
+                vector<int> skillIndex;
+
+                while (true)
                 {
-                    if (player.chosenHero.skillList[i].manaCost <= player.chosenHero.mana)
+                    for (int i = 0; i < player.chosenHero.skillList.size(); i++)
+                    {
+                        if (player.chosenHero.skillList[i].manaCost <= player.chosenHero.mana)
+                        {
+                            skillIndex.push_back(i);
+                        }
+                    }
+                    if (skillIndex.size())
+                    {
+                        cout << "Pilih jurus yang ingin digunakan:" << endl;
+                        for (int i = 0; i < skillIndex.size(); i++)
+                        {
+                            cout << i + 1 << ". " << player.chosenHero.skillList[skillIndex[i]].name << "(Additional Damage : " << player.chosenHero.skillList[skillIndex[i]].damage << ", Mana Cost: " << player.chosenHero.skillList[skillIndex[i]].manaCost << ")" << endl;
+                        }
+                        cin >> choice;
+                        while (cin.fail() || choice < 1 || choice > skillIndex.size())
+                        {
+                            cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
+                            cin.clear();                                         // untuk membersihkan error flag
+                            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // untuk menghapus input yang tidak valid
+                            cin >> choice;
+                        }
+                        if (player.chosenHero.mana >= player.chosenHero.skillList[choice - 1].manaCost)
+                        {
+                            temporaryDamagePlayer += player.chosenHero.skillList[choice - 1].damage;
+                            player.chosenHero.mana -= player.chosenHero.skillList[choice - 1].manaCost;
+                            bot.chosenHero.health -= temporaryDamagePlayer * (1 - (bot.chosenHero.defense / 100));
+                            bot.chosenHero.mana += 15;
+                            if (player.chosenHero.health <= 0)
+                            {
+                                cout << "Health Musuh habis" << endl;
+                            }
+                            else
+                            {
+                                cout << "Anda menang! Health Musuh: " << bot.chosenHero.health << endl;
+                            }
+                            cout << "Anda menang! Health Anda: " << player.chosenHero.health << endl;
+                            cout << "Anda menang! Mana Anda: " << player.chosenHero.mana << endl;
+                            cout << "Anda menang! Mana Musuh: " << bot.chosenHero.mana << endl;
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        cout << "Mana Habis" << endl;
+                        break;
+                    }
+                }
+            }
+            else if (winner == "bot")
+            {
+                double temporaryDamageBot;
+                int temporarySkillBot;
+                int choice;
+                temporaryDamageBot = bot.chosenHero.damage;
+                vector<int> skillIndex;
+
+                for (int i = 0; i < bot.chosenHero.skillList.size(); i++)
+                {
+                    if (bot.chosenHero.skillList[i].manaCost <= bot.chosenHero.mana)
                     {
                         skillIndex.push_back(i);
                     }
                 }
                 if (skillIndex.size())
                 {
-                    cout << "Pilih jurus yang ingin digunakan:" << endl;
-                    for (int i = 0; i < skillIndex.size(); i++)
+                    mt19937 rng(random_device{}());
+                    uniform_int_distribution<> dist(0, skillIndex.size() - 1);
+                    int randomIndex = dist(rng);
+                    choice = skillIndex[randomIndex];
+
+                    if (bot.chosenHero.mana >= bot.chosenHero.skillList[choice - 1].manaCost)
                     {
-                        cout << i + 1 << ". " << player.chosenHero.skillList[skillIndex[i]].name << "(Additional Damage : " << player.chosenHero.skillList[skillIndex[i]].damage << ", Mana Cost: " << player.chosenHero.skillList[skillIndex[i]].manaCost << ")" << endl;
-                    }
-                    cin >> choice;
-                    while (cin.fail() || choice < 1 || choice > skillIndex.size())
-                    {
-                        cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
-                        cin.clear();                                         // untuk membersihkan error flag
-                        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // untuk menghapus input yang tidak valid
-                        cin >> choice;
-                    }
-                    if (player.chosenHero.mana >= player.chosenHero.skillList[choice - 1].manaCost)
-                    {
-                        temporaryDamagePlayer += player.chosenHero.skillList[choice - 1].damage;
-                        player.chosenHero.mana -= player.chosenHero.skillList[choice - 1].manaCost;
-                        bot.chosenHero.health -= temporaryDamagePlayer * (bot.chosenHero.defense / 100);
-                        bot.chosenHero.mana += 15;
-                        if (bot.chosenHero.health <= 0)
+                        cout << "Bot Menyerang menggunakan Skill : " << bot.chosenHero.skillList[choice - 1].name << "( Damage: " << bot.chosenHero.skillList[choice - 1].damage << ", Mana Cost : " << bot.chosenHero.skillList[choice - 1].manaCost << " )" << endl;
+                        temporaryDamageBot += bot.chosenHero.skillList[choice - 1].damage;
+                        bot.chosenHero.mana -= bot.chosenHero.skillList[choice - 1].manaCost;
+                        player.chosenHero.health -= temporaryDamageBot * (1 - (bot.chosenHero.defense / 100));
+                        player.chosenHero.mana += 15;
+                        if (player.chosenHero.health <= 0)
                         {
-
-                            cout << "Health Musuh habis" << endl;
+                            cout << "Health Anda habis" << endl;
                         }
-                        cout << "Anda menang! Health Anda: " << player.chosenHero.health << endl;
-                        cout << "Anda menang! Mana Anda: " << player.chosenHero.mana << endl;
-                        break;
+                        else
+                        {
+                            cout << "Anda kalah! Health Anda: " << player.chosenHero.health << endl;
+                        }
+                        cout << "Anda kalah! Mana Anda: " << player.chosenHero.mana << endl;
+                        cout << "Anda kalah! Mana Musuh: " << bot.chosenHero.mana << endl;
+                        cout << "Anda kalah! Health Musuh: " << bot.chosenHero.health << endl;
                     }
                 }
-                else
-                {
-                    cout << "Mana Habis" << endl;
-                    break;
-                }
             }
-        }
-        else if (winner == "bot")
-        {
-            double temporaryDamageBot;
-            int temporarySkillBot;
-            int choice;
-            temporaryDamageBot = bot.chosenHero.damage;
-            vector<int> skillIndex;
-
-            for (int i = 0; i < bot.chosenHero.skillList.size(); i++)
+            else if (winner == "draw")
             {
-                if (bot.chosenHero.skillList[i].manaCost <= bot.chosenHero.mana)
-                {
-                    skillIndex.push_back(i);
-                }
+                cout << "Hasil seri!" << endl;
+                player.chosenHero.mana += 10;
+                bot.chosenHero.mana += 10;
             }
-            if (skillIndex.size())
+            else
             {
-                mt19937 rng(random_device{}());
-                uniform_int_distribution<> dist(0, skillIndex.size() - 1);
-                int randomIndex = dist(rng);
-                choice = skillIndex[randomIndex];
-
-                if (bot.chosenHero.mana >= bot.chosenHero.skillList[choice - 1].manaCost)
-                {
-                    cout << "Bot Menyerang menggunakan Skill : " << bot.chosenHero.skillList[choice - 1].name << "( Damage: "<< bot.chosenHero.skillList[choice - 1].damage<<", Mana Cost : "<< bot.chosenHero.skillList[choice - 1].manaCost<<" )"<<endl;
-                    temporaryDamageBot += bot.chosenHero.skillList[choice - 1].damage;
-                    bot.chosenHero.mana -= bot.chosenHero.skillList[choice - 1].manaCost;
-                    player.chosenHero.health -= temporaryDamageBot * (bot.chosenHero.defense / 100);
-                    player.chosenHero.mana += 15;
-                    if (player.chosenHero.health <= 0)
-                    {
-
-                        cout << "Health Anda habis" << endl;
-                    }
-                    cout << "Anda kalah! Mana Anda: " << player.chosenHero.mana << endl;
-                    cout << "Anda kalah! Mana Musuh: " << bot.chosenHero.mana << endl;
-                    cout << "Anda kalah! Health Musuh: " << bot.chosenHero.health << endl;
-                }
+                cout << "Input tidak valid." << endl;
             }
         }
-        else if (winner == "draw")
-        {
-            cout << "Hasil seri!" << endl;
-            player.chosenHero.mana += 10;
-            bot.chosenHero.mana += 10;
-        }
-        else
-        {
-            cout << "Input tidak valid." << endl;
-        }
-    }
 
-    if (player.chosenHero.health <= 0)
-    {
-        cout << "Hero Anda kalah! Game over." << endl;
+        if (player.chosenHero.health <= 0)
+        {
+            cout << "Hero Anda kalah! Game over." << endl;
+        }
+        else if (bot.chosenHero.health <= 0)
+        {
+            cout << "Hero Anda menang! Selamat!" << endl;
+        }
+        return 0;
     }
-    else if (bot.chosenHero.health <= 0)
-    {
-        cout << "Hero Anda menang! Selamat!" << endl;
-    }
-    return 0;
 }
