@@ -29,12 +29,11 @@ Selain membuat program, kalian perlu menuliskan penjelasan program kalian, denga
 - Pengumpulan tugas ini mirip dengan tugas sebelumnya. 
 - Fork ke repository github kalian masing - masing
 - Buka repository pada repo yang telah di fork sebelumnya
-- Clone repository tersebut pada vscode / IDE kalian
+- Clone repository tersebut
 - Buat program sesuai deskripsi di atas di dalam folder dengan format `Nama_Univ`
 - Tulis penjelasan program kalian pada file `README.md` di dalam folder tersebut
 - Add folder tersebut ke dalam staging
 - Letakkan folder tersebut sejajar dengan file README.md
-- Lalu commit dengan pesan "Hands on OOP submission by < Nama kalian >"
 - Setelah itu push kembali ke repository kalian
 - Pull request kedalam repository GDSC yang sudah anda fork tadi
 - Isi judul pull request dengan "Hands on OOP submission by < Nama kalian >"
