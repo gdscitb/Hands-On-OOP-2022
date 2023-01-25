@@ -20,7 +20,13 @@ public:
         manaCost = mC;
     }
 };
+class Info
+{
+public:
+    virtual void getInfo() = 0;
+};
 
+// ! ABSTRACT METHOD
 class Hero
 {
 public:
@@ -85,7 +91,7 @@ public:
 
 // * Prinsip Multi-inheritance terletak pada class Skill yang merupakan child dari parent hero yang di instance saat case class Weapon dengan grandparent Hero
 // * Prinsip Inheritance biasa terlerak pada class Armor
-class Player : public Hero, public Weapon, public Armor
+class Player : public Hero, public Weapon, public Armor, public Info
 {
 public:
     Hero chosenHero;
@@ -100,7 +106,7 @@ public:
         chosenArmor = a;
         // TODO : GENERATE BUAT PRINT INFO
     }
-    void playerInfo()
+    void getInfo()
     {
         cout << "Player Info" << endl;
         cout << "\nHero: " << chosenHero.name << endl;
@@ -225,7 +231,7 @@ public:
     }
 };
 
-class GamePlay
+class GamePlay : public Bot, public Player
 {
 public:
     string userChoice;
@@ -489,11 +495,11 @@ int main()
         Player player(chosenHero, chosenWeapon, chosenArmor);
 
         // ! POP UP RESULT PLAYER'S HERO INFO
-        player.playerInfo();
+        player.getInfo();
 
         // ! USING ROCK PAPER SCISSORS TO DETERMINE WHO'S PLAYS
         // loading("Enter The Match");
-        GamePlay bkg(player.chosenHero, bot.chosenHero);
+        GamePlay game(player.chosenHero, bot.chosenHero);
 
         while (player.chosenHero.health > 0 && bot.chosenHero.health > 0)
         {
@@ -515,17 +521,17 @@ int main()
             switch (turnPlayer)
             {
             case 1:
-                bkg.userChoice = "rock";
+                game.userChoice = "rock";
                 break;
             case 2:
-                bkg.userChoice = "paper";
+                game.userChoice = "paper";
                 break;
             case 3:
-                bkg.userChoice = "scissors";
+                game.userChoice = "scissors";
                 break;
             }
 
-            string winner = bkg.getWinner();
+            string winner = game.getWinner();
 
             if (winner == "user")
             {
@@ -554,7 +560,7 @@ int main()
                             cout << i + 1 << ". " << player.chosenHero.skillList[skillIndex[i]].name << "(Additional Damage : " << player.chosenHero.skillList[skillIndex[i]].damage << ", Mana Cost: " << player.chosenHero.skillList[skillIndex[i]].manaCost << ")" << endl;
                         }
                         cin >> choice;
-                    // * ANTICIPATE ERROR INPUT
+                        // * ANTICIPATE ERROR INPUT
                         while (cin.fail() || choice < 1 || choice > skillIndex.size())
                         {
                             cout << "Pilihan tidak valid. Silakan pilih kembali:" << endl;
@@ -639,8 +645,8 @@ int main()
             {
                 // ! EXECUTION DRAW MECHANISM
                 cout << "Hasil seri!" << endl;
-                player.chosenHero.mana += 10;
-                bot.chosenHero.mana += 10;
+                player.chosenHero.mana += 5;
+                bot.chosenHero.mana += 5;
             }
             else
             {
