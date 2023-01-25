@@ -25,11 +25,9 @@ Selain membuat program, kalian perlu menuliskan penjelasan program kalian, denga
 Buatlah suatu program yang _perlu_ mengimplementasikan konsep-konsep OOP, seminimalnya
 
 ✅ Inheritance :
-
   Dalam program tersebut, terdapat prinsip inheritance yang diterapkan pada class Player, dimana class Player mewarisi sifat dan perilaku dari class Hero, Weapon, dan Armor. Penerapan inheritance ini dapat dilihat pada constructor Player yang meng-extend class Hero, Weapon, dan Armor.
 
 ✅ Interface dan/atau abstract class:
-
   class Hero sudah menerapkan interface dengan menyimpan objek dari class Skill menggunakan vector. Pada class Hero, terdapat method addJurus yang digunakan untuk menambahkan objek dari class Skill selain itu, terdapat interface berupa classInfo yang akan melakukan generate info dan digunakan oleh class Player dan Bot untuk akses info dalam class tersebut
 
 - Polimorfisme
@@ -37,7 +35,6 @@ Buatlah suatu program yang _perlu_ mengimplementasikan konsep-konsep OOP, semini
 - Mengimplementasikan (minimal 1) design pattern
 
 ✅ Mengimplementasikan (minimal 1) prinsip SOLID: 
-
   Tidak diterapkan prinsip SOLID yang secara khusus diterapkan, namun dapat dilihat penerapan beberapa prinsip SOLID seperti Single Responsibility Principle (SRP) pada class Skill, Hero, Weapon, Armor yang memiliki tanggung jawab yang spesifik dan tidak saling terkait. juga dapat dilihat penerapan Open-Closed Principle (OCP) pada class Hero dengan memiliki fungsi addJurus untuk menambahkan skill tanpa mengubah class Hero itu sendiri.
 
 
