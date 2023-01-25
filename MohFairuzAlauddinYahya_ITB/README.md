@@ -41,7 +41,9 @@ Buatlah suatu program yang _perlu_ mengimplementasikan konsep-konsep OOP, semini
 ### Beberapa Bonus yang Direkomendasikan
 
 - Stream API dan/atau functional programming
+
 ✅ Multilevel inheritance
   class GamePlay sudah menerapkan konsep multilevel inheretance yagn mewarisi sifat bot dan player yagn masing-masing juga mewarisi sifat dari hero yang mewarisi sifat skill , armor, dan weapon.
+
 ✅ Interactive program (Menerima input dan mengeluarkan output sesuai input)
   Pada program saya menerapkan interactive program agar user dapat melakukan input secara manual dengan memilih angka untuk memilih hero, weapon, dan armor dengan spesifikasi tertentu. Serta melakukan input untuk menentukan giliran penyerang dengan input lagi jika dalam mode menyerang untuk memilih skill yang digunakan untuk menyerang
