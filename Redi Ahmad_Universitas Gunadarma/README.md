@@ -1,18 +1,18 @@
-## Getting Started
+## Deskripsi Program
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Program yang sangat sederhana untuk membuat rekening baru berdasarkan nama dan deposit awal.
 
-## Folder Structure
+## Design Pattern dan Prinsip SOLID
 
-The workspace contains two folders by default, where:
+Design pattern yang digunakan pada program ini adalah _Factory_. Penerapannya terletak pada class `Nasabah` . Sedangkan, prinsip yang digunakan adalah _Single Responsibility Principle_ yang di-implementasikan pada class `Nasabah` dan class `Main` dimana class `Nasabah` hanya memiliki satu tanggung jawab, yakni menyimpan data dan operasi terkait rekening nasabah dan class `Main` hanya bertanggung jawab untuk berinteraksi dengan _user_.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Cara Menjalankan Program
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Clone repository ini.
+2. Masuk ke direktori `Redi Ahmad_Universitas Gunadarma/src/`
+3. Compile program terlebih dahulu dengan perintah `javac Main.java` pada terminal.
+4. Jalankan program dengan perintah `java Main`
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Versi Bahasa
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Bahasa yang digunakan adalah JavaSE 19.0.2
