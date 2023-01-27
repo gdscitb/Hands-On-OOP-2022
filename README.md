@@ -1,65 +1,41 @@
-# Hands On OOP
+# Deskripsi Program
+Program ini adalah simple console app, yaitu Vending Machine. User akan diminta
+untuk berinteraksi dengan app sebagaimana menggunakan
+Vending Machine seperti di dunia nyata.
 
-## Deskripsi Tugas
-Buatlah suatu program yang *perlu* mengimplementasikan konsep-konsep OOP, seminimalnya
-- Inheritance
-- Interface dan/atau abstract class
-- Polimorfisme
-- Mengimplementasikan (minimal 1) design pattern
-- Mengimplementasikan (minimal 1) prinsip SOLID
+# Design Pattern yang Dipilih
+Design Pattern yang dipilih adalah Creational Pattern,
+yaitu Factory Method. Design pattern ini menitik beratkan
+kepada pembuatan object yang tidak terlalu mementingkan
+bagaimana object tersebut berinteraksi atau berfungsi nantinya.
 
-Tugas ini sangat membebaskan kalian untuk berkreasi. Konsep-konsep lain yang kalian gunakan dan keunikan program akan sangat dihargai dan dihitung sebagai bonus nilai (jangan lupa tulis di penjelasan program). Silakan berkreasi! :D
+# Letak Implementasi Design Pattern
+Pada class ItemFactory dibuat beberapa Vending yang berperan
+sebagai factory-factory yang akan menambatkan attribut
+sekaligus membuat object tersebut. Namun, attribut akan
+ditambatkan apabila ada request dari user.
 
-### Beberapa Bonus yang Direkomendasikan
-- Stream API dan/atau functional programming
-- Multilevel inheritance
-- Interactive program (Menerima input dan mengeluarkan output sesuai input)
+# Alasan Pemilihan Design Pattern Tersebut
+Karena ada banyak object makanan, minuman, dan makanan
+yang terolah, saya memutuskan untuk fokus terhadap pembuatan
+object. Makanan, minuman, dan makanan yang terolah pun
+tentunya adalah sebuah kumpulan class yang memerlukan
+masing-masing space syntax sehingga diperlukan sebuah kelas abstrak yang
+nantinya memiliki subclass-subclass-lainnya. Object-object pun akan banyak
+sesuai dengan Vending yang disediakan oleh programmer dan request dari user.
 
-## Penjelasan Program
-Selain membuat program, kalian perlu menuliskan penjelasan program kalian, dengan seminimalnya berisikan
-- Deskripsi program
-- Penjelasan design pattern yang dipilih
-- Letak implementasi design pattern tersebut
-- Alasan pemilihan design pattern tersebut
-- Cara menjalankan program
-- Versi bahasa dan dependency (jika ada) yang digunakan
-- Konsep-konsep lain yang kalian gunakan dan keunikan program (jika ada)
+# Cara Menjalankan Program
+1. Disarankan program dijalankan di intellij IDEA.
+1. User menginput jumlah uang. Akan ada sebuah validasi dari sisi programmer
+agar user dapat menjalankan program dengan baik.
+2. Pilih vending machine yang menjadi tujuan Anda. User menginput
+string yang berupa pilihan vending machine.
+3. Pilih barang yang anda inginkan. User menginput nomor barang yang
+dipilih (terletak di atas barang).
+4. Apabila masih ada barang yang bisa dibeli dan uang masih
+tersedia (
+Programmer masih belum bisa merealisasikan karena keterbatasan waktu terhadap deadline), program akan tetap 
+berjalan. Namun, program akan berhenti jika tidak ada barang yang bisa dibeli.
 
-## Pengumpulan
-- Pengumpulan tugas ini mirip dengan tugas sebelumnya. 
-- Fork ke repository github kalian masing - masing
-- Buka repository pada repo yang telah di fork sebelumnya
-- Clone repository tersebut
-- Buat program sesuai deskripsi di atas di dalam folder dengan format `Nama_Univ`
-- Tulis penjelasan program kalian pada file `README.md` di dalam folder tersebut
-- Add folder tersebut ke dalam staging
-- Letakkan folder tersebut sejajar dengan file README.md
-- Setelah itu push kembali ke repository kalian
-- Pull request kedalam repository GDSC yang sudah anda fork tadi
-- Isi judul pull request dengan "Hands on OOP submission by < Nama kalian >"
-
-## Bahasa Pemrograman
-Tidak semua bahasa pemrograman dapat mengimplementasikan OOP. Untuk tugas ini, ada bahasa yang dapat digunakan dan tidak dapat digunakan.
-
-### Bahasa yang dapat digunakan
-Selain bahasa di bawah ini, kalian dapat me-request bahasa lain, dengan persetujuan tim kurikulum GDSC ITB
-
-- C++
-- Java
-- Kotlin
-- Typescript
-- Go (Golang)
-- C#
-
-### Bahasa yang tidak dapat digunakan
-Karena keterbatasan di bahasa-bahasa berikut, bahasa di bawah ini tidak digunakan di tugas ini
-- Python
-- PHP
-- C
-
-## Deliverable
-- Kumpulkan link github fork repository dan link pull request kalian ke gform yang dibagikan
-
-## Deadline
-- Jumat, 27 Januari 2023, pukul 23.59
-
+# Versi Bahasa
+Program dibuat dengan JDK 15.0.2 dan gradle 7.4.2
