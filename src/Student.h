@@ -10,17 +10,17 @@
         };
 
     class Student : public User {
-        protected :
+        public :
             Major studentMajor;
         
             int citizenshipScore;
             int religionScore;
             int environmentalScore;
 
-        public :
-            // virtual json asJSON() = 0;
+        // public :
+            virtual json asJSON();
 
-            Student(int, string, Major);
+            // Student(int, string);
 
     };
 
@@ -29,6 +29,8 @@
             int artScore;
 
         public :
+            ArtStudent(int, string);
+
             json asJSON();
     };
 
@@ -37,6 +39,8 @@
             int literatureScore;
 
         public :
+            LiteratureStudent(int, string);
+
             json asJSON();
     };
 
@@ -45,6 +49,7 @@
             int medicalScore;
 
         public :
+            MedicalStudent(int, string);
             json asJSON();
     };
 

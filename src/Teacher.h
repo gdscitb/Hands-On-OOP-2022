@@ -1,9 +1,15 @@
 #ifndef TEACHER_H
 #define TEACHER_H
 
+#include "User.h"
+
     class Teacher : public User {
-        protected :
+        public :
+            Teacher();
+            Teacher(int, string);
+
             json asJSON();
+
 
     };
 

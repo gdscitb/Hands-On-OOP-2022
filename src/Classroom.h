@@ -10,10 +10,18 @@
     class Classroom {
         private :
             int classroomId;
+
             Teacher teacher;
-            vector<Student> studentList;
+            // vector<Student> studentList;
 
         public :
+            vector<Student> studentList;
+            Classroom(int, Teacher);
+
+            void addStudent(Student);
+
+            json asJSON();
+
             void storeClassroom();
 
         // public :

@@ -2,13 +2,22 @@
 
 
 
-Student::Student(int myid, string myName, Major myMajor){
+ArtStudent::ArtStudent(int myid, string myName){
     id = myid;
     name = myName;
-    studentMajor = myMajor;
+    studentMajor = art;
 
-    cout << id << name << studentMajor << endl;
+    citizenshipScore = religionScore = environmentalScore = artScore = 0;
 }
+
+json Student::asJSON(){
+    json data;
+
+    data["identifier"]["id"] = id;
+    data["identifier"]["name"] = name;
+
+    return data;
+};
 
 json ArtStudent::asJSON(){
     json data;
