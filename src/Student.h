@@ -1,12 +1,6 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 
-// #include <string>
-
-// #include <nlohmann/json.hpp>
-
-    // using namespace std;
-    // using namespace nlohmann;
 #include "User.h"
 
     enum Major {
@@ -24,7 +18,9 @@
             int environmentalScore;
 
         public :
-            virtual json asJSON();
+            // virtual json asJSON() = 0;
+
+            Student(int, string, Major);
 
     };
 

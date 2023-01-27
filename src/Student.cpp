@@ -1,5 +1,15 @@
 #include "Student.h"
 
+
+
+Student::Student(int myid, string myName, Major myMajor){
+    id = myid;
+    name = myName;
+    studentMajor = myMajor;
+
+    cout << id << name << studentMajor << endl;
+}
+
 json ArtStudent::asJSON(){
     json data;
 
