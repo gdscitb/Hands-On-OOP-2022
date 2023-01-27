@@ -63,3 +63,18 @@ Karena keterbatasan di bahasa-bahasa berikut, bahasa di bawah ini tidak digunaka
 ## Deadline
 - Jumat, 27 Januari 2023, pukul 23.59
 
+## Deskripsi
+Program bank sederhana
+
+Terdapat fitur login dan register lalu setelah login akan ada pilihan menu
+cek saldo, deposit, dan tarik tunai.
+
+Implementasi OOP ada pada user dimana user terdapat tiga jenis yaitu standard, gold, dan platinum
+
+Tersedia 3 akun/user bawaan untuk tes:
+- mch123, 1234 (standard)
+- abg123, 1234 (gold)
+- dxg123, 1234 (platinum)
+
+Program berbasis terminal jadi dijalankan di terminal
+
