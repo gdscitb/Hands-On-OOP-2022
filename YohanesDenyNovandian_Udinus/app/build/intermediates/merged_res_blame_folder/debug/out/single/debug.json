@@ -1,174 +1,182 @@
 [
     {
-        "merged": "com.example.noteapp-merged_res-6:/layout_activity_forgot_password.xml.flat",
-        "source": "com.example.noteapp-main-8:/layout/activity_forgot_password.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\menu_popup_menu.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\menu\\popup_menu.xml"
     },
     {
         "merged": "com.example.noteapp-merged_res-6:/layout_activity_login.xml.flat",
         "source": "com.example.noteapp-main-8:/layout/activity_login.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/layout_activity_main.xml.flat",
-        "source": "com.example.noteapp-main-8:/layout/activity_main.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\font_poppinsmedium.ttf.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\font\\poppinsmedium.ttf"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.noteapp-main-8:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\layout\\activity_forgot_password.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/font_poppinsmedium.ttf.flat",
-        "source": "com.example.noteapp-main-8:/font/poppinsmedium.ttf"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.noteapp-main-8:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable-v24_note.gif.flat",
-        "source": "com.example.noteapp-main-8:/drawable-v24/note.gif"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.noteapp-main-8:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable_gambar3.png.flat",
-        "source": "com.example.noteapp-main-8:/drawable/gambar3.png"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable_ic_add.xml.flat",
-        "source": "com.example.noteapp-main-8:/drawable/ic_add.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/layout_note_list.xml.flat",
-        "source": "com.example.noteapp-main-8:/layout/note_list.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable-v24_note1.gif.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable-v24\\note1.gif"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable-v24_logout2.png.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable-v24\\logout2.png"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable_ic_pin.png.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable\\ic_pin.png"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "com.example.noteapp-merged_res-6:/layout_activity_splash_screen.xml.flat",
         "source": "com.example.noteapp-main-8:/layout/activity_splash_screen.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable-v24_logout.png.flat",
-        "source": "com.example.noteapp-main-8:/drawable-v24/logout.png"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable_ic_kembali.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable\\ic_kembali.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable-v24_note1.gif.flat",
-        "source": "com.example.noteapp-main-8:/drawable-v24/note1.gif"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\font_poppinsextra.ttf.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\font\\poppinsextra.ttf"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.noteapp-main-8:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\layout\\activity_register.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable_ic_pin.png.flat",
-        "source": "com.example.noteapp-main-8:/drawable/ic_pin.png"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable-v24_note.gif.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable-v24\\note.gif"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/font_poppinsregular.ttf.flat",
-        "source": "com.example.noteapp-main-8:/font/poppinsregular.ttf"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable-v24_logout2.png.flat",
-        "source": "com.example.noteapp-main-8:/drawable-v24/logout2.png"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable_gambar1.png.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable\\gambar1.png"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.noteapp-main-8:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\font_poppinsregular.ttf.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\font\\poppinsregular.ttf"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable-v24_note2.gif.flat",
-        "source": "com.example.noteapp-main-8:/drawable-v24/note2.gif"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/font_poppinsextra.ttf.flat",
-        "source": "com.example.noteapp-main-8:/font/poppinsextra.ttf"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/layout_activity_register.xml.flat",
-        "source": "com.example.noteapp-main-8:/layout/activity_register.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable-v24_note2.gif.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable-v24\\note2.gif"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.noteapp-main-8:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable_gambar3.png.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable\\gambar3.png"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.noteapp-main-8:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.noteapp-main-8:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.noteapp-main-8:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.noteapp-main-8:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-pngs-1:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable_ic_save.xml.flat",
-        "source": "com.example.noteapp-main-8:/drawable/ic_save.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\font_poppinsbold.ttf.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\font\\poppinsbold.ttf"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.noteapp-main-8:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable_logout.xml.flat",
-        "source": "com.example.noteapp-main-8:/drawable/logout.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.noteapp-pngs-1:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable_ic_save.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable\\ic_save.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/font_poppinsbold.ttf.flat",
-        "source": "com.example.noteapp-main-8:/font/poppinsbold.ttf"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.noteapp-main-8:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable_logout.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable\\logout.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/layout_activity_notes_taker.xml.flat",
-        "source": "com.example.noteapp-main-8:/layout/activity_notes_taker.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\layout_note_list.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\layout\\note_list.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable_login.png.flat",
-        "source": "com.example.noteapp-main-8:/drawable/login.png"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\layout_activity_notes_taker.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\layout\\activity_notes_taker.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.noteapp-main-8:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable_login.png.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable\\login.png"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/font_poppinssemibold.ttf.flat",
-        "source": "com.example.noteapp-main-8:/font/poppinssemibold.ttf"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable_ic_kembali.xml.flat",
-        "source": "com.example.noteapp-main-8:/drawable/ic_kembali.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable-v24_logout.png.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable-v24\\logout.png"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.noteapp-main-8:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable\\ic_add.xml"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable_button_shape.xml.flat",
-        "source": "com.example.noteapp-main-8:/drawable/button_shape.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\font_poppinssemibold.ttf.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\font\\poppinssemibold.ttf"
     },
     {
-        "merged": "com.example.noteapp-merged_res-6:/drawable_gambar1.png.flat",
-        "source": "com.example.noteapp-main-8:/drawable/gambar1.png"
-    },
-    {
-        "merged": "com.example.noteapp-merged_res-6:/menu_popup_menu.xml.flat",
-        "source": "com.example.noteapp-main-8:/menu/popup_menu.xml"
-    },
-    {
-        "merged": "com.example.noteapp-merged_res-6:/xml_backup_rules.xml.flat",
-        "source": "com.example.noteapp-main-8:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-merged_res-6:\\drawable_button_shape.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\daemon\\7.3.3\\com.example.noteapp-main-8:\\drawable\\button_shape.xml"
     }
 ]

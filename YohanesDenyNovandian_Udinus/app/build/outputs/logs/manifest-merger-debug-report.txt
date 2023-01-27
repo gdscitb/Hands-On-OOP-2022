@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:2:1-45:12
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\ASUS\.gradle\caches\transforms-3\108b8bc0cdf39c36a1c3904621f6e692\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ASUS\.gradle\caches\transforms-3\e150e59a5eff2849123cc71cccc5d62e\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\ASUS\.gradle\caches\transforms-3\a8971b6b11c98a905ee9968d5b8d3f9a\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
@@ -62,43 +62,43 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ASUS\.gradle\cac
 MERGED from [androidx.print:print:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\5820c645284d6ca1ef51957e6cfde250\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\6df64fc127eb14277f9d2f5db338ed51\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [pl.droidsonroids:relinker:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-3\891e97e7b9e2746a348a1b76f0413457\transformed\relinker-1.3.1\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:4:5-34
-		INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:4:5-34
+		INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:2:1-45:12
-		INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:2:1-45:12
-		INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:6:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\205461a8128503bb3d7e99637366e94a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\205461a8128503bb3d7e99637366e94a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\52e77eda6b5500cd75378fa56639355b\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\52e77eda6b5500cd75378fa56639355b\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:5-67
 	android:name
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:7:5-79
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\205461a8128503bb3d7e99637366e94a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\205461a8128503bb3d7e99637366e94a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\52e77eda6b5500cd75378fa56639355b\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\52e77eda6b5500cd75378fa56639355b\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
 	android:name
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:7:22-76
 application
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:9:5-43:19
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:9:5-43:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\ASUS\.gradle\caches\transforms-3\108b8bc0cdf39c36a1c3904621f6e692\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\ASUS\.gradle\caches\transforms-3\108b8bc0cdf39c36a1c3904621f6e692\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ASUS\.gradle\caches\transforms-3\e150e59a5eff2849123cc71cccc5d62e\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -136,73 +136,73 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\AS
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] C:\Users\ASUS\.gradle\caches\transforms-3\6b0d21eab06e5265ade3f75cd87f966f\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:14:9-41
 	android:fullBackupContent
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:12:9-54
 	android:roundIcon
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:15:9-54
 	tools:targetApi
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:18:9-29
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:18:9-29
 	android:icon
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:17:9-45
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:17:9-45
 	android:dataExtractionRules
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:11:9-65
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:11:9-65
 activity#com.example.noteapp.ForgotPassword
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:19:9-21:40
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:21:13-37
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:20:13-43
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:20:13-43
 activity#com.example.noteapp.RegisterActivity
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:22:9-24:40
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:24:13-37
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:23:13-45
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:23:13-45
 activity#com.example.noteapp.LoginActivity
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:25:9-27:40
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:27:13-37
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:26:13-42
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:26:13-42
 activity#com.example.noteapp.SplashScreenActivity
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:28:9-36:20
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:28:9-36:20
 	android:exported
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:29:13-49
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:29:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:34:27-74
 activity#com.example.noteapp.NotesTakerActivity
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:37:9-39:40
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:37:9-39:40
 	android:exported
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:39:13-37
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:39:13-37
 	android:name
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:38:13-47
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:38:13-47
 activity#com.example.noteapp.MainActivity
-ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:40:9-42:40
+ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:40:9-42:40
 	android:exported
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:42:13-37
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml:41:13-41
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml:41:13-41
 uses-sdk
-INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
-INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
+INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\ASUS\.gradle\caches\transforms-3\108b8bc0cdf39c36a1c3904621f6e692\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\ASUS\.gradle\caches\transforms-3\108b8bc0cdf39c36a1c3904621f6e692\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ASUS\.gradle\caches\transforms-3\e150e59a5eff2849123cc71cccc5d62e\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
@@ -319,16 +319,16 @@ MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ASUS\.g
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\6df64fc127eb14277f9d2f5db338ed51\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [pl.droidsonroids:relinker:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-3\891e97e7b9e2746a348a1b76f0413457\transformed\relinker-1.3.1\AndroidManifest.xml:5:5-43
 MERGED from [pl.droidsonroids:relinker:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-3\891e97e7b9e2746a348a1b76f0413457\transformed\relinker-1.3.1\AndroidManifest.xml:5:5-43
-INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
-INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
+INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
-		ADDED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Kampus\GITHUB\GDSC ITB\NoteSederhana\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Kampus\PemroMobile\NoteApp\app\src\main\AndroidManifest.xml
 activity#com.google.firebase.auth.internal.GenericIdpActivity
 ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\205461a8128503bb3d7e99637366e94a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
 	android:excludeFromRecents
