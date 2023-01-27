@@ -1,7 +1,7 @@
 // IN PROGRESS
 
-String[] nature = ["light", "dark", "earth", "thunder"]
-String[] elements = ["wind", "water", "fire", "wood"]
+String[] nature = ["light", "dark", "earth", "thunder"];
+String[] elements = ["wind", "water", "fire", "wood"];
 
 public class Ganemon {
     private String name;
@@ -52,7 +52,7 @@ public class Ganemon {
         String desc = MessageFormat.format("{0} attacks {1}. {1} health is reduced by {2}.", attacker.name, defender.name, hit)
         System.out.println(desc);
 
-        if(defender.health == 0){
+        if(defender.HP == 0){
             System.out.println(defender.name + " is dead");
             defender.HP = 0;
         } else {
@@ -87,11 +87,11 @@ public class Ganemon {
         this.HP = HP;
     }
 
-    public String getAT() {
+    public int getAT() {
         return AT;
     }
 
-    public void setAT(String AT) {
+    public void setAT(int AT) {
         this.AT = AT;
     }
 
