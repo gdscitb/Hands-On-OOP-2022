@@ -3,35 +3,25 @@
 > Game Basic Tic Tac Toe menggunakan bahasa pemrograman C++
 
 ## Daftar Isi
-* [Implementasi Program](#implementasi-program)
-* [Features and Commands](#features-and-commands)
 * [Sistematika File](#sistematika-file)
-* [Cara Menjalankan Program](#cara-menjalankan-program)
 * [Screenshots](#screenshots)
 * [Developed by](#creator)
-
-
-## Implementasi Program
-*On Progress*
-
-## Features and Commands
-*On Progress*
 
 ## Sistematika File
 *On Progress*
 ```bash
 .
-├─── src
-│   ├─── player.cpp
+├─── board.cpp
+├─── board.h
+├─── main.cpp
+├─── player.cpp
+├─── player.h
 └─── README.md
 ```
 
-## Cara Menjalankan Program
-*On Progress*
-
 ## Screenshots
 *On Progress*
-![screenshots]()
+![screenshots](SSS.png)
 
 ## Creator
 * Austin Gabriel Pardosi
