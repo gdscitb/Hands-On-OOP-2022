@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+class Laptop {
+// Berikut merupakan baris awal dari class. Tanda kurung kurawal menunujukkan awal dari class.
+  public:
+      // Selain itu, terdapat keyword baru bernama public.
+    string pemilik;
+    string merk;
+    double ukuranLayar;
+    // Tiga baris ini merupakan definisi dari variabel class atau biasa dikenal dengan istilah data member .
+
+    string hidupkanLaptop() {
+      return "Hidupkan Laptop";
+    }
+
+    string matikanLaptop() {
+      return "Matikan Laptop";
+    }
+};
+// Ini merupakan member function dari class Laptop.
+int main()
+{
+
+  Laptop laptopFarhan;
+// Lanjut ke function main, Baris Laptop laptopFarhan ini merupakan perintah untuk membuat suatu objek dari class Laptop.
+  laptopFarhan.pemilik = "Farhan";
+  laptopFarhan.merk = "ROG";
+  laptopFarhan.ukuranLayar = 15.6;
+  // Ketiga baris ini merupakan cara mengisi nilai ke dalam data member dari object laptopFarhan.
+
+  cout << laptopFarhan.pemilik << endl;
+  cout << laptopFarhan.merk << endl;
+  cout << laptopFarhan.ukuranLayar << endl;
+// Kode program ini dipakai untuk menampilkan beberapa nilai data member objek laptopFarhan yang telah diset sebelumnya.
+
+  cout << laptopFarhan.hidupkanLaptop() << endl;
+  cout << laptopFarhan.matikanLaptop() << endl;
+  // Dan ini merupakan cara pemanggilan member function dari object laptopFarhan. Ini juga merupakan kode terakhir dari program ini.
+
+  return 0;
+}
