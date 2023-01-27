@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "lib": ["es6"],
+        "module": "CommonJS",
+        "types": ["node"],
+        "removeComments": false,
+        "experimentalDecorators": true,
+        "noImplicitOverride": true,
+        "sourceMap": true,
+        "moduleDetection": "force",
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "baseUrl": "."
+//        "paths": {
+//            "@/*": ["src/*"],
+//            "@/lib/*": ["src/lib/*"],
+//        },
+    },
+    "include": [
+        "src",
+        "src/**/*.ts",
+        "src/typings"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+    ],
+    "typeRoots": [
+        "src/typings",
+        "node_modules/@types",
+    ]
+}
