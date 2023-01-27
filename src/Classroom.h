@@ -23,7 +23,7 @@
             json asJSON();
 
             void storeClassroom();
-            void displayClassRoom();
+            void displayClassroom();
 
         // public :
             

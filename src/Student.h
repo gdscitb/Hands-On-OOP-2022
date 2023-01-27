@@ -10,17 +10,25 @@
         };
 
     class Student : public User {
-        public :
+        protected :
             Major studentMajor;
         
             int citizenshipScore;
             int religionScore;
             int environmentalScore;
 
-        // public :
+        public :
             virtual json asJSON() = 0;
+            virtual int getMajorCourseScore() = 0;
 
-            // Student(int, string);
+            string getStudentMajor();
+
+            int getCitizenshipScore();
+            int getReligionScore();
+            int getEnvironmentalScore();
+
+            
+            
 
     };
 
@@ -29,7 +37,11 @@
             int artScore;
 
         public :
-            ArtStudent(int, string);
+            ArtStudent(int, string, int, int, int, int);
+
+            // int getArtScore();
+
+            int getMajorCourseScore();
 
             json asJSON();
     };
@@ -39,7 +51,11 @@
             int literatureScore;
 
         public :
-            LiteratureStudent(int, string);
+            LiteratureStudent(int, string, int, int, int, int);
+
+            // int getLiteratureScore();
+
+            int getMajorCourseScore();
 
             json asJSON();
     };
@@ -49,7 +65,12 @@
             int medicalScore;
 
         public :
-            MedicalStudent(int, string);
+            MedicalStudent(int, string, int, int, int, int);
+
+            // int getMedicalScore();
+
+            int getMajorCourseScore();
+
             json asJSON();
     };
 

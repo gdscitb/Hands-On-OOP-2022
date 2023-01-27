@@ -4,58 +4,90 @@ int randint(int start, int end){
     return rand() % (end - start + 1) + start;
 }
 
-ArtStudent::ArtStudent(int myid, string myName){
+ArtStudent::ArtStudent(int myid, string myName, int citizenship, int religion, int environmental, int myart){
     id = myid;
     name = myName;
     studentMajor = art;
 
-    citizenshipScore = randint(60, 90);
-    religionScore = randint(60, 90);
-    environmentalScore = randint(60, 90);
-    artScore = randint(60, 90);
+    citizenshipScore = citizenship;
+    religionScore = religion;
+    environmentalScore = environmental;
+    artScore = myart;
 }
 
-LiteratureStudent::LiteratureStudent(int myid, string myName){
+LiteratureStudent::LiteratureStudent(int myid, string myName, int citizenship, int religion, int environmental, int myliterature){
+    id = myid;
+    name = myName;
+    studentMajor = literature;
+
+    citizenshipScore = citizenship;
+    religionScore = religion;
+    environmentalScore = environmental;
+    literatureScore = myliterature;
+}
+
+MedicalStudent::MedicalStudent(int myid, string myName, int citizenship, int religion, int environmental, int mymedical){
     id = myid;
     name = myName;
     studentMajor = art;
 
-    citizenshipScore = randint(60, 90);
-    religionScore = randint(60, 90);
-    environmentalScore = randint(60, 90);
-    literatureScore = randint(60, 90);
+    citizenshipScore = citizenship;
+    religionScore = religion;
+    environmentalScore = environmental;
+    medicalScore = mymedical;
 }
 
-MedicalStudent::MedicalStudent(int myid, string myName){
-    id = myid;
-    name = myName;
-    studentMajor = art;
+string Student::getStudentMajor(){
+    string mymajor[] = {"art", "literature", "medical"};
 
-    citizenshipScore = randint(60, 90);
-    religionScore = randint(60, 90);
-    environmentalScore = randint(60, 90);
-    medicalScore = randint(60, 90);
+    return mymajor[studentMajor];
 }
 
-json Student::asJSON(){
-    json data;
+int Student::getCitizenshipScore(){
+    return citizenshipScore;
+}
 
-    data["identifier"]["id"] = id;
-    data["identifier"]["name"] = name;
+int Student::getEnvironmentalScore(){
+    return environmentalScore;
+}
 
-    data["scores"]["citizenship"] = citizenshipScore;
-    data["scores"]["religion"] = religionScore;
-    data["scores"]["environmental"] = environmentalScore;
+int Student::getReligionScore(){
+    return religionScore;
+}
+
+int ArtStudent::getMajorCourseScore(){
+    return artScore;
+}
+
+int LiteratureStudent::getMajorCourseScore(){
+    return literatureScore;
+}
+
+int MedicalStudent::getMajorCourseScore(){
+    return medicalScore;
+}
 
 
-    return data;
-};
+// json Student::asJSON(){
+//     // json data;
+
+//     // data["identifier"]["id"] = id;
+//     // data["identifier"]["name"] = name;
+
+//     // data["scores"]["citizenship"] = citizenshipScore;
+//     // data["scores"]["religion"] = religionScore;
+//     // data["scores"]["environmental"] = environmentalScore;
+
+
+//     // return data;
+// };
 
 json ArtStudent::asJSON(){
     json data;
 
     data["identifier"]["id"] = id;
     data["identifier"]["name"] = name;
+    data["identifier"]["major"] = getStudentMajor(); // enum
 
     data["scores"]["citizenship"] = citizenshipScore;
     data["scores"]["religion"] = religionScore;
@@ -71,6 +103,8 @@ json LiteratureStudent::asJSON(){
 
     data["identifier"]["id"] = id;
     data["identifier"]["name"] = name;
+    data["identifier"]["major"] = getStudentMajor(); // enum
+
 
     data["scores"]["citizenship"] = citizenshipScore;
     data["scores"]["religion"] = religionScore;
@@ -86,6 +120,7 @@ json MedicalStudent::asJSON(){
 
     data["identifier"]["id"] = id;
     data["identifier"]["name"] = name;
+    data["identifier"]["major"] = getStudentMajor(); // enum
 
     data["scores"]["citizenship"] = citizenshipScore;
     data["scores"]["religion"] = religionScore;
