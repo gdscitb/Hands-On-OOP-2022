@@ -9,7 +9,7 @@ Classroom DatabaseManager::getClassroom(int id = 0){
 }
 
 void DatabaseManager::StoreData(){
-    ofstream JSONFile("data.json");
+    ofstream JSONFile("src/data.json");
     json data;
     //  = json::parse(JSONFile);
 
@@ -25,7 +25,7 @@ void DatabaseManager::StoreData(){
 void DatabaseManager::LoadData(){
     classroomList.clear();
     
-    ifstream JSONFile("data.json");
+    ifstream JSONFile("src/data.json");
     json data = json::parse(JSONFile);
 
     // cout <<endl << endl << data.dump() << data[0]["classID"] << endl << endl;
