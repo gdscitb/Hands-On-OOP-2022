@@ -12,7 +12,9 @@ Untuk menjalankan program ini sangatlah mudah.
 2. Pastikan file module tidak hilang, jika hilang silahkan mengunduh kembali module TypeScript menggunakan NPM dengan command berikut:
 `npm install typescript --save-dev`.
 3. Jika NodeJS dan Module ada, silahkan jalankan program dengan menuliskan command berikut:
+
 `tsc main.ts` 
+
 `node main.js`
 
 > Program ini tidak bisa menerima input dari terminal. Sehingga untuk mencoba merubah nilai tertentu harus melakukan hardcode pada file `main.ts`.
