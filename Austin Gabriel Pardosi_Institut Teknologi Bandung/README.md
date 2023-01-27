@@ -1,6 +1,6 @@
-# Basic Monopoly
+# Basic Tic Tac Toe
 > Source Code ini dibuat oleh saya, Austin Gabriel Pardosi, untuk memenuhi Tugas Hands On Object Oriented Programming GDSC 2022  yaitu mengimplementasikan 
-> Game Basic Monopoly menggunakan bahasa pemrograman C++
+> Game Basic Tic Tac Toe menggunakan bahasa pemrograman C++
 
 ## Daftar Isi
 * [Implementasi Program](#implementasi-program)
