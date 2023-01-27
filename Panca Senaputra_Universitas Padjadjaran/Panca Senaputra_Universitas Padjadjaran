@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+class Laptop {
+  public:
+    string pemilik;
+    string merk;
+    double ukuranLayar;
+
+    string hidupkanLaptop() {
+      return "Hidupkan Laptop";
+    }
+
+    string matikanLaptop() {
+      return "Matikan Laptop";
+    }
+};
+int main()
+{
+
+  Laptop laptopFarhan;
+  laptopFarhan.pemilik = "Farhan";
+  laptopFarhan.merk = "ROG";
+  laptopFarhan.ukuranLayar = 15.6;
+
+  cout << laptopFarhan.pemilik << endl;
+  cout << laptopFarhan.merk << endl;
+  cout << laptopFarhan.ukuranLayar << endl;
+
+  cout << laptopFarhan.hidupkanLaptop() << endl;
+  cout << laptopFarhan.matikanLaptop() << endl;
+
+  return 0;
+}
