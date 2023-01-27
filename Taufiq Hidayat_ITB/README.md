@@ -8,4 +8,6 @@ Program menerima input spesifikasi segi empat dan persegi kemudian mengeluarkan 
 4. program menerima input sisi persegi
 5. program memproses input dan mengeluarkan output luas dan keliling persegi
 
-program dibuat dan dijalankan dengan c++ 20
+program dibuat dan di-test dengan c++ 20
+
+jalankan program dengan meng-compile main.cpp
