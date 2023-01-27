@@ -1,0 +1,16 @@
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\bin\Debug\net5.0\RPGGameHugo_ITB.exe
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\bin\Debug\net5.0\RPGGameHugo_ITB.deps.json
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\bin\Debug\net5.0\RPGGameHugo_ITB.runtimeconfig.json
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\bin\Debug\net5.0\RPGGameHugo_ITB.runtimeconfig.dev.json
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\bin\Debug\net5.0\RPGGameHugo_ITB.dll
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\bin\Debug\net5.0\ref\RPGGameHugo_ITB.dll
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\bin\Debug\net5.0\RPGGameHugo_ITB.pdb
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\obj\Debug\net5.0\RPGGameHugo_ITB.csproj.AssemblyReference.cache
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\obj\Debug\net5.0\RPGGameHugo_ITB.GeneratedMSBuildEditorConfig.editorconfig
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\obj\Debug\net5.0\RPGGameHugo_ITB.AssemblyInfoInputs.cache
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\obj\Debug\net5.0\RPGGameHugo_ITB.AssemblyInfo.cs
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\obj\Debug\net5.0\RPGGameHugo_ITB.csproj.CoreCompileInputs.cache
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\obj\Debug\net5.0\RPGGameHugo_ITB.dll
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\obj\Debug\net5.0\ref\RPGGameHugo_ITB.dll
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\obj\Debug\net5.0\RPGGameHugo_ITB.pdb
+D:\!KULIAH\GDSC\HandsonOOP2022\RPGGameHugo_ITB\obj\Debug\net5.0\RPGGameHugo_ITB.genruntimeconfig.cache

@@ -1,65 +1,22 @@
-# Hands On OOP
+## Deskripsi Program
+Program saya yang berjudul "Monster Wave" merupakan sebuah program game dimana kita dihadang oleh monster yang terus bertubi tubi menyerang kita.Di program ini, user dapat menginput "A" (Singkatan untuk Attack) nantinya program akan melakukan "serangan" ke monster dan mengurangi nyawanya serta input "D" untuk menaikan pertahananan  kita (Defense). Tetapi ada plot twist yaitu monster dapat menahan serangan kita dan adanya kemungkinan semua serangan kita tertangkis dan nyawa monster tidak akan berkurang, sama halnya dengan kita menangkis serangan monster.Ketika monster berhasil dikalahkan, user akan mendapatkan XP(Experience point) yang nantinya dapat digunakan untuk menaikan stats kita bisa berupa Attack atau Defense ketika user menyentuh titik XP maksimal dan meraih level up.Monster akan terus datang bertubi tubi dan nyawanya akan bertambah terus serta stats mereka akan naik jika kita juga level up, jadi seperti genre game "rogue-like".
 
-## Deskripsi Tugas
-Buatlah suatu program yang *perlu* mengimplementasikan konsep-konsep OOP, seminimalnya
-- Inheritance
-- Interface dan/atau abstract class
-- Polimorfisme
-- Mengimplementasikan (minimal 1) design pattern
-- Mengimplementasikan (minimal 1) prinsip SOLID
+## Design Pattern yang dipilih
+Dalam program ini, untuk design pattern saya memilih Behavioral Patterns karena pattern ini cara paling paling efektik untuk komunikasi antara tiap class / object yang akan terjadi secara terus menerus
 
-Tugas ini sangat membebaskan kalian untuk berkreasi. Konsep-konsep lain yang kalian gunakan dan keunikan program akan sangat dihargai dan dihitung sebagai bonus nilai (jangan lupa tulis di penjelasan program). Silakan berkreasi! :D
+## Letak Implementasi
+Banyak implementasi dari pattern ini seperti ketika user menginput A, maka program dari class Battle akan memanggil class player dan mengambil method Attack() yang berisi untuk mengurangi darah lawan sesuai interval dari 1 hingga attack maksimal dari stats suatu player / monster.Sama halnya juga ketika menaikan Defense user (input "D") dan ketika naik level program meminta user menginput baik A atau D sesuai stats yang ingin dinaikan (disini program akan memanggil class player dan mengambil method sesuai yang diminta)
 
-### Beberapa Bonus yang Direkomendasikan
-- Stream API dan/atau functional programming
-- Multilevel inheritance
-- Interactive program (Menerima input dan mengeluarkan output sesuai input)
+## Alasan memilih design pattern tersebut
+Tentu saja dengan memilih pattern ini, saya dapat mengurangi kerumitan komunikasi atau pemanggilan antara object object yang sudah saya buat.Tak hanya mengurangi kerumitan, tetapi membuat program saya lebih efisien dan flexibel.
 
-## Penjelasan Program
-Selain membuat program, kalian perlu menuliskan penjelasan program kalian, dengan seminimalnya berisikan
-- Deskripsi program
-- Penjelasan design pattern yang dipilih
-- Letak implementasi design pattern tersebut
-- Alasan pemilihan design pattern tersebut
-- Cara menjalankan program
-- Versi bahasa dan dependency (jika ada) yang digunakan
-- Konsep-konsep lain yang kalian gunakan dan keunikan program (jika ada)
+## Cara menjalankan program
+Program ini dijalankan cukup mudah karena sudah banyak informasi yang terpampang dalam console nya.User ketika run program untuk pertama kalinya akan ditampilan HP user, HP monster, Stats (Attack Defense) serta XP dan level.User dapat menginput "A" maupun "D" sesuai keinginan atau strategi sendiri, lalu monster akan giliran menyerang anda.Scale penyerangan ini berdasarkan interval bergantung pada stats anda(jika Attack anda 4, maka attack antara 1-4.Jika defense 10, maka kemungkinan tangkisan damage sebesar 1 hingga 10).Lalu jika anda berhasil mengalahkan monster, yaitu ketika menyentuk HP monster sebesar 0, maka anda akan menang dan mendapatkan HP tambahan sebesar 20 dan segelintir XP(random dari 30-70).Jika XP anda menyentuh cap XP , maka anda akan naik level dan bisa menaikan stats user sesuai yang diinginkan serta mendapatkan bonus HP sebesar 50.Namun ingat, ketika anda makin kuat, monster pun juga makin kuat.
 
-## Pengumpulan
-- Pengumpulan tugas ini mirip dengan tugas sebelumnya. 
-- Fork ke repository github kalian masing - masing
-- Buka repository pada repo yang telah di fork sebelumnya
-- Clone repository tersebut
-- Buat program sesuai deskripsi di atas di dalam folder dengan format `Nama_Univ`
-- Tulis penjelasan program kalian pada file `README.md` di dalam folder tersebut
-- Add folder tersebut ke dalam staging
-- Letakkan folder tersebut sejajar dengan file README.md
-- Setelah itu push kembali ke repository kalian
-- Pull request kedalam repository GDSC yang sudah anda fork tadi
-- Isi judul pull request dengan "Hands on OOP submission by < Nama kalian >"
 
-## Bahasa Pemrograman
-Tidak semua bahasa pemrograman dapat mengimplementasikan OOP. Untuk tugas ini, ada bahasa yang dapat digunakan dan tidak dapat digunakan.
+## Versi Bahasa
+C Sharp (C# 9) Target Framework .NET 5.0
 
-### Bahasa yang dapat digunakan
-Selain bahasa di bawah ini, kalian dapat me-request bahasa lain, dengan persetujuan tim kurikulum GDSC ITB
 
-- C++
-- Java
-- Kotlin
-- Typescript
-- Go (Golang)
-- C#
 
-### Bahasa yang tidak dapat digunakan
-Karena keterbatasan di bahasa-bahasa berikut, bahasa di bawah ini tidak digunakan di tugas ini
-- Python
-- PHP
-- C
-
-## Deliverable
-- Kumpulkan link github fork repository dan link pull request kalian ke gform yang dibagikan
-
-## Deadline
-- Jumat, 27 Januari 2023, pukul 23.59
 
