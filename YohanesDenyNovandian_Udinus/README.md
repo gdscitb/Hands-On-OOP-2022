@@ -20,9 +20,14 @@
 - Android SDK Platform 33.0.3
 - Android Emulator 31.3.14
 - Android API 33
+
+## Ilustrasi
   ![note]()
   ![notes]()
-  ![compile]()
+  ![notes](notes.png)
+  ![note](note.png)
+  
+  
   
 
 *catatan
