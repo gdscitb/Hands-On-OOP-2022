@@ -13,8 +13,10 @@ Tentu saja dengan memilih pattern ini, saya dapat mengurangi kerumitan komunikas
 ## Cara menjalankan program
 Program ini dijalankan cukup mudah karena sudah banyak informasi yang terpampang dalam console nya.User ketika run program untuk pertama kalinya akan ditampilan HP user, HP monster, Stats (Attack Defense) serta XP dan level.User dapat menginput "A" maupun "D" sesuai keinginan atau strategi sendiri, lalu monster akan giliran menyerang anda.Scale penyerangan ini berdasarkan interval bergantung pada stats anda(jika Attack anda 4, maka attack antara 1-4.Jika defense 10, maka kemungkinan tangkisan damage sebesar 1 hingga 10).Lalu jika anda berhasil mengalahkan monster, yaitu ketika menyentuk HP monster sebesar 0, maka anda akan menang dan mendapatkan HP tambahan sebesar 20 dan segelintir XP(random dari 30-70).Jika XP anda menyentuh cap XP , maka anda akan naik level dan bisa menaikan stats user sesuai yang diinginkan serta mendapatkan bonus HP sebesar 50.Namun ingat, ketika anda makin kuat, monster pun juga makin kuat.
 
+
 ## Versi Bahasa
 C Sharp (C# 9) Target Framework .NET 5.0
+
 
 
 
