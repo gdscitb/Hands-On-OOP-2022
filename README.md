@@ -25,10 +25,17 @@ Selain membuat program, kalian perlu menuliskan penjelasan program kalian, denga
 - Versi bahasa dan dependency (jika ada) yang digunakan
 - Konsep-konsep lain yang kalian gunakan dan keunikan program (jika ada)
 
-## Deskripsi Programm
+## Deskripsi Program
 Program ini adalab program untuk menghitung luas dan volume dari beberapa bangun.
 Terdapat beberapa bangun yang saya sediakan untuk dapat dihitung luas atau volumenya.
 Ketika memulai program, user dihadapkan dengan 6 bangun yang akan dipilih sendiri oleh user lalu user nantinya akan menginput sisi atau apapun untuk menghitung luas ataupun volume.
+
+## Design Pattern
+Design pattern yang saya gunakan adalah design pattern factory.
+Design pattern factory adalah pola desain yang digunakan untuk membuat objek tanpa menentukan kelas spesifik yang digunakan untuk membuat objek tersebut. 
+
+## Alasan pemilihan design pattern
+Alasan saya memilih design pattern tersebut adalah karena itu memungkinkan saya untuk membuat objek tanpa harus mengetahui class yang digunakan untuk membuat objek tersebut.
 
 ## Pengumpulan
 - Pengumpulan tugas ini mirip dengan tugas sebelumnya. 
