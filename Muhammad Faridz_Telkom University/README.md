@@ -1,5 +1,5 @@
     Deskripsi singkat:
-    program ini mengenai penjumlahan laptop
+    program ini mengenai penjualan laptop yang terdiri dari gamminglaptop dan businneslaptop.
 
     Penjelasan:
     Inheritance: Class GamingLaptop dan BusinessLaptop mewarisi properti dan method dari class Laptop.
