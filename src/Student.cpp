@@ -1,7 +1,14 @@
 #include "Student.h"
 
-int randint(int start, int end){
-    return rand() % (end - start + 1) + start;
+ArtStudent::ArtStudent(string myName, int citizenship, int religion, int environmental, int myart){
+    id = time(0) + randint(-10, 10);
+    name = myName;
+    studentMajor = art;
+
+    citizenshipScore = citizenship;
+    religionScore = religion;
+    environmentalScore = environmental;
+    artScore = myart;
 }
 
 ArtStudent::ArtStudent(int myid, string myName, int citizenship, int religion, int environmental, int myart){
@@ -15,6 +22,17 @@ ArtStudent::ArtStudent(int myid, string myName, int citizenship, int religion, i
     artScore = myart;
 }
 
+LiteratureStudent::LiteratureStudent(string myName, int citizenship, int religion, int environmental, int myliterature){
+    id = time(0) + randint(-10, 10);
+    name = myName;
+    studentMajor = literature;
+
+    citizenshipScore = citizenship;
+    religionScore = religion;
+    environmentalScore = environmental;
+    literatureScore = myliterature;
+}
+
 LiteratureStudent::LiteratureStudent(int myid, string myName, int citizenship, int religion, int environmental, int myliterature){
     id = myid;
     name = myName;
@@ -24,6 +42,17 @@ LiteratureStudent::LiteratureStudent(int myid, string myName, int citizenship, i
     religionScore = religion;
     environmentalScore = environmental;
     literatureScore = myliterature;
+}
+
+MedicalStudent::MedicalStudent(string myName, int citizenship, int religion, int environmental, int mymedical){
+    id = time(0) + randint(-10, 10);
+    name = myName;
+    studentMajor = art;
+
+    citizenshipScore = citizenship;
+    religionScore = religion;
+    environmentalScore = environmental;
+    medicalScore = mymedical;
 }
 
 MedicalStudent::MedicalStudent(int myid, string myName, int citizenship, int religion, int environmental, int mymedical){
@@ -93,7 +122,7 @@ json ArtStudent::asJSON(){
     data["scores"]["religion"] = religionScore;
     data["scores"]["environmental"] = environmentalScore;
 
-    data["scores"]["art"] = artScore;
+    data["scores"]["majorCourse"] = artScore;
 
     return data;
 }
@@ -110,7 +139,7 @@ json LiteratureStudent::asJSON(){
     data["scores"]["religion"] = religionScore;
     data["scores"]["environmental"] = environmentalScore;
 
-    data["scores"]["literature"] = literatureScore;
+    data["scores"]["majorCourse"] = literatureScore;
 
     return data;
 }
@@ -126,7 +155,7 @@ json MedicalStudent::asJSON(){
     data["scores"]["religion"] = religionScore;
     data["scores"]["environmental"] = environmentalScore;
 
-    data["scores"]["medical"] = medicalScore;
+    data["scores"]["majorCourse"] = medicalScore;
 
     return data;
 }

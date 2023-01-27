@@ -17,9 +17,12 @@
 
         public :
             void addClassroom(Classroom);
+            Classroom getClassroom(int);
 
             void StoreData();
             void LoadData();
+
+            void ClearData();
 
             void displayDatabase();
             

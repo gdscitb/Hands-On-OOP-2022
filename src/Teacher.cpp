@@ -2,6 +2,11 @@
 
 Teacher::Teacher(){};
 
+Teacher::Teacher(string myName){
+    id = time(0) + randint(-10, 10);
+    name = myName;
+}
+
 Teacher::Teacher(int myid, string myName){
     id = myid;
     name = myName;

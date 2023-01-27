@@ -2,6 +2,7 @@
 #define STUDENT_H
 
 #include "User.h"
+// #include "randint.h"
 
     enum Major {
             art,
@@ -37,6 +38,7 @@
             int artScore;
 
         public :
+            ArtStudent(string, int, int, int, int);
             ArtStudent(int, string, int, int, int, int);
 
             // int getArtScore();
@@ -51,6 +53,7 @@
             int literatureScore;
 
         public :
+            LiteratureStudent(string, int, int, int, int);
             LiteratureStudent(int, string, int, int, int, int);
 
             // int getLiteratureScore();
@@ -65,6 +68,7 @@
             int medicalScore;
 
         public :
+            MedicalStudent(string, int, int, int, int);
             MedicalStudent(int, string, int, int, int, int);
 
             // int getMedicalScore();

@@ -1,7 +1,12 @@
 #include "Classroom.h"
 
-Classroom::Classroom(int myclassid, Teacher myteacher){
-    classroomId = myclassid;
+Classroom::Classroom(Teacher myteacher){
+    classroomId = time(0) + randint(-10, 10);;
+    teacher = myteacher;
+}
+
+Classroom::Classroom(int myid, Teacher myteacher){
+    classroomId = myid;
     teacher = myteacher;
 }
 

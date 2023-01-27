@@ -15,8 +15,10 @@
             // vector<Student> studentList;
 
         public :
-            vector<Student*> studentList;
+            Classroom(Teacher);
             Classroom(int, Teacher);
+            
+            vector<Student*> studentList;
 
             void addStudent(Student*);
 
