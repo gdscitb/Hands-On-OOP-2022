@@ -1,6 +1,9 @@
 # Program Penjualan Buah
 Program ini merupakan program skala kecil oop terkait penjualan buah di toko Pak Warmi. Pada program ini pengguna dapat membeli buah sesuai dengan masukan pengguna. Harga per kilogram dan persediaan setiap buah dapat diedit manual pada Main.java. 
 
+# Design Pattern
+Design pattern yang digunakan pada program ini adalah design pattern singleton. Dapat dilihat dari class mangga, apel, durian, melon, semangka, pisang setiap class tersebut terdapat satu instance sebuah kelas. Saya memilih singleton karena paling mudah diimplementasikan.
+
 # Bahasa yang Digunakan
 Program ini dibuat dengan menggunakan bahasa java versi 19.
 
