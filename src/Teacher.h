@@ -3,12 +3,18 @@
 
     #include <string>
 
+    #include <nlohmann/json.hpp>
+
     using namespace std;
+    using namespace nlohmann;
 
     class Teacher {
         private :
             int teacherID;
             string teacherName;
+
+        protected :
+            json asJSON();
 
     };
 
