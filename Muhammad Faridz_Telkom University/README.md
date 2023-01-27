@@ -1,5 +1,5 @@
     Deskripsi singkat:
-    program ini mengenai penjualan laptop yang terdiri dari gamminglaptop dan businneslaptop.
+    program ini mengenai penjualan laptop yang terdiri dari gaminglaptop dan businneslaptop.
 
     Penjelasan:
     Inheritance: Class GamingLaptop dan BusinessLaptop mewarisi properti dan method dari class Laptop.
