@@ -1,0 +1,1 @@
+Program ini bernama "OneTwoThree to 25". Jadi di program ini, user bisa memilih angka dari 1 sampai 3 untuk menjumlahkan angka yang tersedia (angka dimulai dari 1). Musuh secara random memilih angka dari 1 sampai 5. Jika user atau musuh membuat jumlah angka menjadi lebih dari 25, maka dia akan kalah!
