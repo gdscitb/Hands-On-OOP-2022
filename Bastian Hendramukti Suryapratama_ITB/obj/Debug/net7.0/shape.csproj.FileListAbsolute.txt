@@ -1,0 +1,15 @@
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\bin\Debug\net7.0\shape.exe
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\bin\Debug\net7.0\shape.deps.json
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\bin\Debug\net7.0\shape.runtimeconfig.json
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\bin\Debug\net7.0\shape.dll
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\bin\Debug\net7.0\shape.pdb
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\obj\Debug\net7.0\shape.csproj.AssemblyReference.cache
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\obj\Debug\net7.0\shape.GeneratedMSBuildEditorConfig.editorconfig
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\obj\Debug\net7.0\shape.AssemblyInfoInputs.cache
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\obj\Debug\net7.0\shape.AssemblyInfo.cs
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\obj\Debug\net7.0\shape.csproj.CoreCompileInputs.cache
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\obj\Debug\net7.0\shape.dll
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\obj\Debug\net7.0\refint\shape.dll
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\obj\Debug\net7.0\shape.pdb
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\obj\Debug\net7.0\shape.genruntimeconfig.cache
+D:\Datasaya\GDSC\tugas\Object Oriented Programming\shape\obj\Debug\net7.0\ref\shape.dll
