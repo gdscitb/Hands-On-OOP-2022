@@ -1,9 +1,9 @@
 #include "User.h"
 
-// int User::getID(){
-//     return id;
-// }
+int User::getid(){
+    return id;
+}
 
-// string User::getName(){
-//     return name;
-// }
+string User::getName(){
+    return name;
+}

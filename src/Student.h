@@ -18,7 +18,7 @@
             int environmentalScore;
 
         // public :
-            virtual json asJSON();
+            virtual json asJSON() = 0;
 
             // Student(int, string);
 

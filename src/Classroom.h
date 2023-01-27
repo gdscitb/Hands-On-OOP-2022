@@ -15,14 +15,15 @@
             // vector<Student> studentList;
 
         public :
-            vector<Student> studentList;
+            vector<Student*> studentList;
             Classroom(int, Teacher);
 
-            void addStudent(Student);
+            void addStudent(Student*);
 
             json asJSON();
 
             void storeClassroom();
+            void displayClassRoom();
 
         // public :
             

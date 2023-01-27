@@ -12,7 +12,10 @@
         protected : 
             int id;
             string name;
-    
+
+        public :
+            int getid();
+            string getName();
 
     };
 

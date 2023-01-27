@@ -5,7 +5,7 @@ Classroom::Classroom(int myclassid, Teacher myteacher){
     teacher = myteacher;
 }
 
-void Classroom::addStudent(Student student){
+void Classroom::addStudent(Student* student){
     studentList.push_back(student);
 }
 
@@ -15,10 +15,14 @@ json Classroom::asJSON(){
     data["teacher"] = teacher.asJSON();
 
     for(auto i:studentList){
-        data["students"].push_back(i.asJSON());
+        data["students"].push_back(i->asJSON());
     }
     
 
 
     return data;
+}
+
+void Classroom::displayClassRoom(){
+    cout << "Teacher :" << teacher.getName();
 }
