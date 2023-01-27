@@ -1,5 +1,5 @@
 # Program Penjualan Buah
-Program ini merupakan program skala kecil oop terkait penjualan buah di toko Pak Warmi. Pada program ini pengguna dapat membeli buah sesuai dengan masukan pengguna. Harga per kilogram dan persediaan setiap buah dapat di edit manual pada Main.java. 
+Program ini merupakan program skala kecil oop terkait penjualan buah di toko Pak Warmi. Pada program ini pengguna dapat membeli buah sesuai dengan masukan pengguna. Harga per kilogram dan persediaan setiap buah dapat diedit manual pada Main.java. 
 
 # Bahasa yang Digunakan
 Program ini dibuat dengan menggunakan bahasa java versi 19.
