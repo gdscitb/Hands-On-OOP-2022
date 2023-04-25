@@ -10,7 +10,7 @@ memanggil tiap-tiap class untuk menjadikan hasil akhirnya sebagai sebuah KTM. */
 input nama dan NIM dan menghasilkan hasil akhir KTM berupa nama dan nim.
 Disini saya juga melakukan import sebagai alat membuat input user. */
 
-
+jhkasdf
 class Main {                                    // Class utama (instance) berisikan variabel-variabel yang dibutuhkan dalam pemograman
     String inputname;                           // Terdapat 3 variabel yaitu 2 String (Nantinya 1 akan diubah ke integer karena berupa angka)
     String inputnim;                            // dan satunya lagi berupa Scanner (berfungsi untuk menginput dari user)
