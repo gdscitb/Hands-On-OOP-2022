@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+asdasd
 /* Program ini adalah program untuk membuat KTM.
 Saya menggunakan pola Creational Pattern untuk membuat program ini. Dengan menggunakan pattern Builder, saya berhasil
 membuat program ini dengan membuat class secara step-by-step. Program yang kompleks saya sederhanakan menjadi 4 bagian,
